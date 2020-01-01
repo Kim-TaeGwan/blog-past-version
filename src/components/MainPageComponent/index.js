@@ -1,7 +1,7 @@
 import React from "react";
 
 const MainPageComponent = () => {
-  return <div>asd</div>;
+  return <div className="mainpage_wrapper"></div>;
 };
 
 export default MainPageComponent;

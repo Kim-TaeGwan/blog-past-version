@@ -5,6 +5,7 @@
   /* color: #ffffff; */
   overflow: hidden;
   position: relative;
+  background-color: #f1f1f1;
 }
 .container {
   background-size: cover;
