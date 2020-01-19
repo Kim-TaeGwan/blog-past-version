@@ -37,9 +37,15 @@ const SideMenu = () => {
         </ul>
       </div>
       <div className="sns_list">
-        <span><img alt="" width="100%" height="100%" /></span>
-        <span><img alt="" width="100%" height="100%" /></span>
-        <span><img alt="" width="100%" height="100%" /></span>
+        <span>
+          <img alt="" width="100%" height="100%" />
+        </span>
+        <span>
+          <img alt="" width="100%" height="100%" />
+        </span>
+        <span>
+          <img alt="" width="100%" height="100%" />
+        </span>
       </div>
     </div>
   );
