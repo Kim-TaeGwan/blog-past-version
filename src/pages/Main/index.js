@@ -1,12 +1,12 @@
 import React from "react";
-import MainPageComponent from "../../components/MainPageComponent";
 import Layout from "../../layout/Layout";
+import MainPageContainer from "../../containers/containers/MainPageContainer";
 
 const MainPage = props => {
   const { history, location } = props;
   return (
     <Layout history={history} location={location}>
-      <MainPageComponent />
+      <MainPageContainer />
     </Layout>
   );
 };
