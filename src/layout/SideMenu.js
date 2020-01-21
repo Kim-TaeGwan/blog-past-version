@@ -44,13 +44,13 @@ const SideMenu = () => {
       </div>
       <div className="sns_list">
         <span>
-          <img alt="" width="100%" height="100%" />
+          <img alt="insta" width="100%" height="100%" />
         </span>
         <span>
-          <img alt="" width="100%" height="100%" />
+          <img alt="facebook" width="100%" height="100%" />
         </span>
         <span>
-          <img alt="" width="100%" height="100%" />
+          <img alt="kakao" width="100%" height="100%" />
         </span>
       </div>
     </div>
