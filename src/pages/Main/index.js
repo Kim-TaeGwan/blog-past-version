@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "../../layout/Layout";
-import MainPageContainer from "../../containers/containers/MainPageContainer";
+import Layout from "layout/Layout";
+import MainPageContainer from "containers/MainPageContainer";
 
 const MainPage = props => {
   const { history, location } = props;
