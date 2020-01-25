@@ -1,13 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap);
 
+@import "./common.css";
 @import "./layout.css";
+@import "./mainpage.css";
 
 body {
-  margin: 0;
-  background-color: #f1f1f1;
-  font-family: 'Raleway', sans-serif;
+	margin: 0;
+	background-color: #f1f1f1;
+	font-family: 'Raleway', sans-serif;
 }
 
 code {
-  font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }

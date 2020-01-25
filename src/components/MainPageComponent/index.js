@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
 
-const MainPageComponent = () => {
-  return <div className="mainpage_wrapper">test</div>;
+const MainPageComponent = (props) => {
+	const { children } = props;
+	return <div className="mainpage_wrapper">{children}</div>;
 };
 
 export default MainPageComponent;
