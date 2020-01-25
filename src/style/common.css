@@ -1,0 +1,9 @@
+/* display */
+.d_inline_block {
+	display: inline-block;
+}
+
+/* vertical-align */
+.v_md {
+	vertical-align: middle;
+}
