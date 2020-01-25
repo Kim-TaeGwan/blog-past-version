@@ -14,7 +14,8 @@ const SideMenu = () => {
 			<div className="profile_img">
 				<img src={profile_img} alt="profile_img" width="100%" height="100%" />
 			</div>
-			<div className="title"> PORTFOLIO </div> <div className="noti"> Template by W3.CSS </div>
+			<div className="title"> PORTFOLIO </div>
+			<div className="noti"> Template by W3.CSS </div>
 			<div className="menu_list">
 				<ul>
 					<li>
