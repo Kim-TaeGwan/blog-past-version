@@ -28,11 +28,13 @@
   height: 100vh;
   padding: 16px;
   box-sizing: border-box;
+  line-height: 36px;
 }
 
 .sideMenu .profile_img {
   width: 120px;
   height: 120px;
+  margin-bottom: 30px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -43,6 +45,12 @@
 .sideMenu .title {
   font-size: 20px;
   font-weight: bolder;
+}
+
+.sideMenu .noti {
+  font-size: 15px;
+  color: #757575;
+  margin-bottom: -10px;
 }
 
 .sideMenu .menu_list ul {
