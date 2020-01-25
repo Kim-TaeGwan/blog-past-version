@@ -4,6 +4,7 @@ import Layout from 'layout/Layout';
 import SideMenu from 'layout/SideMenu';
 import Footer from 'layout/Footer';
 import Header from '../layout/Header';
+import PortfolioList from '../components/MainPageComponent/PortfolioList';
 
 const MainPageContainer = () => {
 	return (
@@ -11,6 +12,7 @@ const MainPageContainer = () => {
 			<SideMenu />
 			<MainPageComponent>
 				<Header />
+				<PortfolioList />
 				<Footer />
 			</MainPageComponent>
 		</Layout>
