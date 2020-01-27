@@ -6,6 +6,7 @@ import mail_ico_black from 'assets/icon/mail_ico(black).svg';
 import insta from 'assets/icon/instagram.svg';
 import facebook from 'assets/icon/facebook.svg';
 import kakao from 'assets/icon/kakaotalk.svg';
+import github from 'assets/icon/github.svg';
 import profile_img from 'assets/image/Profile_img.png';
 
 const SideMenu = () => {
@@ -47,6 +48,9 @@ const SideMenu = () => {
 				</span>
 				<span>
 					<img src={kakao} alt="kakao" width="100%" height="100%" />
+				</span>
+				<span>
+					<img src={github} alt="github" width="100%" height="100%" />
 				</span>
 			</div>
 		</div>

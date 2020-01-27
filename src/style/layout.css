@@ -78,12 +78,13 @@
 .sideMenu .sns_list span {
 	width: 18px;
 	height: 18px;
+	margin-right: 10px;
 	display: inline-block;
 	cursor: pointer;
 }
 
-.sideMenu .sns_list span:nth-child(2) {
-	margin: 0 10px;
+.sideMenu .sns_list span:last-child {
+	margin-right: 0px;
 }
 
 /* Header */
