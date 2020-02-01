@@ -131,4 +131,15 @@
 	color: #fff;
 	background-color: black;
 }
+
+@media (max-width: 993px) {
+	.sideMenu {
+		display: block;
+	}
+}
+@media (max-width: 992px) {
+	.sideMenu {
+		display: none;
+	}
+}
 /* Footer */
