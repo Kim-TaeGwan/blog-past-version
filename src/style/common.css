@@ -9,3 +9,65 @@
 }
 
 /* Portfolio */
+.portfolio {
+	width: calc(33.3% - 8px);
+	margin-bottom: 15px;
+	display: inline-block;
+	font-size: 15px;
+}
+.portfolio:nth-child(3n - 1) {
+	margin: 0 12px;
+}
+.portfolio .portfolio_img img {
+	vertical-align: middle;
+}
+.portfolio .portfolio_img img:hover {
+	opacity: 0.6;
+}
+.portfolio_info {
+	background-color: #fff;
+	padding: 15px;
+}
+.portfolio_info p {
+	margin: 0;
+}
+.portfolio_info p:nth-child(2) {
+	margin-top: 15px;
+	line-height: 1.5;
+}
+@media (max-width: 600px) {
+	.portfolio {
+		width: 100%;
+		display: block;
+		margin-bottom: 15px;
+	}
+	.portfolio:nth-child(3n - 1) {
+		margin: 0;
+	}
+}
+
+/* pagelist*/
+.page_list {
+	margin: 32px 0;
+	text-align: center;
+}
+.page_list div {
+	padding: 8px 16px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.page_list .arrow {
+	font-size: 15px;
+}
+.page_list .insert {
+	color: #fff;
+	background-color: #000;
+}
+.page_list .page:hover {
+	color: #fff;
+	background-color: #000;
+}
+.page_list .insert:hover {
+	color: #000;
+	background-color: #ccc;
+}

@@ -2,8 +2,7 @@
 	width: 100vw;
 	height: 100vh;
 	font-size: 20px;
-	/* color: #ffffff; */
-	overflow: hidden;
+	overflow: auto;
 	position: relative;
 	background-color: #f1f1f1;
 }
@@ -11,7 +10,7 @@
 .container {
 	background-size: cover;
 	margin: auto;
-	overflow: hidden;
+	overflow: auto;
 }
 
 .container .wrapper {

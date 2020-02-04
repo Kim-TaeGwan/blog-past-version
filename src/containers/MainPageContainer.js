@@ -1,6 +1,5 @@
 import React from 'react';
 import MainPageComponent from 'components/MainPageComponent';
-import Layout from 'layout/Layout';
 import SideMenu from 'layout/SideMenu';
 import Footer from 'layout/Footer';
 import Header from '../layout/Header';
@@ -18,7 +17,7 @@ const MainPageContainer = () => {
 		document.getElementById('overLay').style.display = 'none';
 	};
 	return (
-		<Layout>
+		<>
 			<SideMenu onClick={closeNav} />
 			<MainPageComponent>
 				<OverLay />
@@ -26,7 +25,7 @@ const MainPageContainer = () => {
 				<PortfolioList />
 				<Footer />
 			</MainPageComponent>
-		</Layout>
+		</>
 	);
 };
 
