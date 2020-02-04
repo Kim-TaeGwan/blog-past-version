@@ -1,6 +1,7 @@
 import React from 'react';
 
 import box_ico_black from 'assets/icon/box_ico(black).svg';
+import close_ico from 'assets/icon/close_ico(black).svg';
 import user_ico_black from 'assets/icon/user_ico(black).svg';
 import mail_ico_black from 'assets/icon/mail_ico(black).svg';
 import insta from 'assets/icon/instagram.svg';
@@ -9,12 +10,17 @@ import kakao from 'assets/icon/kakaotalk.svg';
 import github from 'assets/icon/github.svg';
 import profile_img from 'assets/image/Profile_img.png';
 
-const SideMenu = () => {
+const SideMenu = (props) => {
+	const { onClick } = props;
 	return (
-		<div className="sideMenu">
+		<div className="sideMenu" id="mySidenav">
+			<div className="close_ico" onClick={onClick}>
+				<img src={close_ico} alt="close_ico" width="100%" height="100%" />
+			</div>
 			<div className="profile_img">
 				<img src={profile_img} alt="profile_img" width="100%" height="100%" />
 			</div>
+			<div className="" />
 			<div className="title"> PORTFOLIO </div>
 			<div className="noti"> Template by W3.CSS </div>
 			<div className="menu_list">
