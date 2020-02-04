@@ -5,6 +5,7 @@
 	padding: 16px;
 	vertical-align: top;
 	margin-left: 300px;
+	position: relative;
 }
 @media (max-width: 992px) {
 	.mainpage_wrapper {

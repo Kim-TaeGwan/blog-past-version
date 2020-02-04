@@ -2,8 +2,7 @@
 	width: 100vw;
 	height: 100vh;
 	font-size: 20px;
-	/* color: #ffffff; */
-	overflow: hidden;
+	overflow: auto;
 	position: relative;
 	background-color: #f1f1f1;
 }
@@ -11,7 +10,7 @@
 .container {
 	background-size: cover;
 	margin: auto;
-	overflow: hidden;
+	overflow: auto;
 }
 
 .container .wrapper {
@@ -178,6 +177,18 @@
 .header .header_nav .insert {
 	color: #fff;
 	background-color: black;
+}
+
+/* overlay */
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	opacity: 0.3;
+	display: none;
 }
 
 @media (max-width: 993px) {
