@@ -27,10 +27,35 @@
 	width: 300px;
 	height: 100vh;
 	padding: 16px;
+	position: relative;
 	box-sizing: border-box;
 	line-height: 36px;
 	position: fixed;
 	z-index: 300;
+	animation: animateleft 0.4s;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+@keyframes animateleft {
+	from {
+		left: -300px;
+		opacity: 0;
+	}
+	to {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+.sideMenu .close_ico {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
 }
 
 .sideMenu .profile_img {
@@ -92,9 +117,32 @@
 	margin-top: 10px;
 	padding-bottom: 15px;
 }
+.header .top {
+	height: 65px;
+	position: relative;
+}
+.header .top .menu_m {
+	font-size: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.header .top .profile_m {
+	width: 65px;
+	height: 65px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
 .header .title {
 	font-weight: bold;
 	font-size: 36px;
+	margin-top: 10px;
 	margin-bottom: 40px;
 }
 .header .header_nav {
@@ -136,10 +184,16 @@
 	.sideMenu {
 		display: block;
 	}
+	.header .top {
+		display: none;
+	}
 }
 @media (max-width: 992px) {
 	.sideMenu {
 		display: none;
+	}
+	.header .top {
+		display: block;
 	}
 }
 /* Footer */

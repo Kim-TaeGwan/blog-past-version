@@ -7,11 +7,18 @@ import Header from '../layout/Header';
 import PortfolioList from '../components/MainPageComponent/PortfolioList';
 
 const MainPageContainer = () => {
+	const openNav = () => {
+		document.getElementById('mySidenav').style.display = 'block';
+	};
+
+	const closeNav = () => {
+		document.getElementById('mySidenav').style.display = 'none';
+	};
 	return (
 		<Layout>
-			<SideMenu />
+			<SideMenu onClick={closeNav} />
 			<MainPageComponent>
-				<Header />
+				<Header onClick={openNav} />
 				<PortfolioList />
 				<Footer />
 			</MainPageComponent>
