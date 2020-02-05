@@ -190,6 +190,11 @@
 	opacity: 0.3;
 	display: none;
 }
+@media (min-width: 993px) {
+	.header .top {
+		display: none;
+	}
+}
 
 @media (max-width: 993px) {
 	.sideMenu {

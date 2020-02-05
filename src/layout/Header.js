@@ -26,9 +26,9 @@ const Header = (props) => {
 					<span className="filter_ico">
 						<img src={gen_ico_black} alt="design_ico " width="100%" height="100%" />
 					</span>
-					<span className="d_inline_block">Design</span>
+					<span className="d_inline_block">Dev</span>
 				</button>
-				<button>
+				{/* <button>
 					<span className="filter_ico">
 						<img src={image_ico_black} alt="photos_ico " width="100%" height="100%" />
 					</span>
@@ -39,7 +39,7 @@ const Header = (props) => {
 						<img src={map_pin_ico_black} alt="art_ico " width="100%" height="100%" />
 					</span>
 					<span className="d_inline_block v_md">Art</span>
-				</button>
+				</button> */}
 			</div>
 			<div />
 		</div>
