@@ -1,8 +1,8 @@
 import React from 'react';
 
 import gen_ico_black from 'assets/icon/gem_ico(black).svg';
-import map_pin_ico_black from 'assets/icon/map_pin_ico(black).svg';
-import image_ico_black from 'assets/icon/image_ico(black).svg';
+// import map_pin_ico_black from 'assets/icon/map_pin_ico(black).svg';
+// import image_ico_black from 'assets/icon/image_ico(black).svg';
 import profile_img from 'assets/image/Profile_img.png';
 
 const Header = (props) => {
