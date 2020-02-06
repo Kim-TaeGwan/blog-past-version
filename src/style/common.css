@@ -71,3 +71,9 @@
 	color: #000;
 	background-color: #ccc;
 }
+
+/* parttitle */
+.part_title {
+	margin: 10px 0;
+	font-weight: 400;
+}
