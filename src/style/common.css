@@ -77,3 +77,23 @@
 	margin: 10px 0;
 	font-weight: 400;
 }
+
+/* technicalskills */
+.SkillsBar span {
+	font-size: 15px;
+	display: inline-block; /* 마진겹침현상때문에   */
+	margin: 15px 0;
+}
+.SkillsBar .skillbar_body {
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	background-color: #9e9e9e;
+}
+.SkillsBar .skillbar_body .skillbar_percent {
+	background-color: #616161;
+	text-align: center;
+	color: #fff;
+	height: 100%;
+	font-size: 15px;
+}
