@@ -22,3 +22,38 @@
 .technical_skills {
 	padding: 0 16px;
 }
+
+/* ContentMe */
+.contentme {
+	background-color: #9e9e9e;
+	cursor: pointer;
+	padding: 12px 0;
+}
+.contentme .contentme_box {
+	padding: 0 16px;
+}
+/* ContactInformation */
+.contact_information {
+	margin: 24px 0;
+}
+.contact_information_list {
+	width: 33.3%;
+	background-color: #009688;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 15px 0;
+	text-align: center;
+}
+.contact_information_list:nth-child(odd) {
+	background-color: #616161;
+}
+.contact_information_list .address_ico {
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+.contact_information_list .content {
+	font-size: 15px;
+	color: #fff;
+}
