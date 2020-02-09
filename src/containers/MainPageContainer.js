@@ -6,7 +6,7 @@ import Header from '../layout/Header';
 import PortfolioList from '../components/MainPageComponent/PortfolioList';
 import OverLay from '../components/common/OverLay';
 import TechnicalSkills from '../components/MainPageComponent/TechnicalSkills';
-import ContentMe from '../components/ContentMe';
+import ContactMe from '../components/ContactMe';
 
 const MainPageContainer = () => {
 	const openNav = () => {
@@ -26,7 +26,7 @@ const MainPageContainer = () => {
 				<Header onClick={openNav} />
 				<PortfolioList />
 				<TechnicalSkills />
-				<ContentMe />
+				<ContactMe />
 				<Footer />
 			</MainPageComponent>
 		</>

@@ -7,7 +7,7 @@ const ContactInformationList = (props) => {
 			<div className="address_ico">
 				<img src={srcIco} alt="address_ico" width="100%" height="100%" />
 			</div>
-			<div className="content">{children}</div>
+			<div className="contact">{children}</div>
 		</div>
 	);
 };
