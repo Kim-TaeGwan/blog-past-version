@@ -90,4 +90,5 @@
 	border: 1px solid #ccc;
 	padding: 8px;
 	display: block;
+	box-sizing: border-box;
 }
