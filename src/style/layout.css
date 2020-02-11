@@ -214,3 +214,17 @@
 	}
 }
 /* Footer */
+.footer {
+	background-color: #616161;
+	color: #fff;
+	padding: 12px 0;
+}
+.footer .footer_box {
+	padding: 32px 16px;
+}
+.footer .footer_box .content_box {
+	width: 33.3%;
+	padding: 0 8px;
+	box-sizing: border-box;
+	display: inline-block;
+}
