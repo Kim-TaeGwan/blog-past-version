@@ -1,6 +1,9 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 
+import post_img_01 from '../assets/image/blog_post_img_01.jpg';
+import post_img_02 from '../assets/image/blog_post_img_02.jpg';
+
 const Footer = () => {
 	return (
 		<div className="footer">
@@ -22,7 +25,26 @@ const Footer = () => {
 				</div>
 				<div className="content_box center">
 					<span className="title">BLOG POSTS</span>
-					<div className="content" />
+					<div className="content">
+						<div className="post_container">
+							<div className="post_img">
+								<img src={post_img_01} alt="post_img" width="100%" height="100%" />
+							</div>
+							<div className="post_info">
+								<span>Lorem</span>
+								<span>Sed mattis nunc</span>
+							</div>
+						</div>
+						<div className="post_container">
+							<div className="post_img">
+								<img src={post_img_02} alt="post_img" width="100%" height="100%" />
+							</div>
+							<div className="post_info">
+								<span>Lorem</span>
+								<span>Sed mattis nunc</span>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div className="content_box right">
 					<span className="title">POPULAR TAGS</span>
