@@ -26,7 +26,6 @@
 /* ContactMe */
 .contactme {
 	background-color: #9e9e9e;
-	cursor: pointer;
 	padding: 12px 0;
 }
 .contactme .contactme_box {
@@ -68,6 +67,7 @@
 	border: 0;
 	background-color: #000;
 	color: #fff;
+	cursor: pointer;
 }
 .contact_input button img {
 	margin-right: 15px;
