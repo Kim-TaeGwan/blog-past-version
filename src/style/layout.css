@@ -287,3 +287,20 @@
 .footer .footer_box .center .content .post_container .post_info span:last-child {
 	font-size: 15px;
 }
+
+@media (max-width: 600px) {
+	.sideMenu {
+		display: none;
+	}
+	.header .top {
+		display: block;
+	}
+	.sideMenu .close_ico {
+		display: block;
+	}
+	.footer .footer_box .content_box {
+		width: 100%;
+		display: block;
+		margin-bottom: 30px;
+	}
+}
