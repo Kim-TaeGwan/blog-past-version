@@ -56,6 +56,12 @@
 	font-size: 15px;
 	color: #fff;
 }
+@media (max-width: 600px) {
+	.contact_information_list {
+		display: block;
+		width: 100%;
+	}
+}
 
 /* ContactInputList */
 .contact_input {
