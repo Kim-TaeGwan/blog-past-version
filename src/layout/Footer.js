@@ -48,8 +48,22 @@ const Footer = () => {
 				</div>
 				<div className="content_box right">
 					<span className="title">POPULAR TAGS</span>
-					<div className="content" />
+					<div className="content">
+						<span className="tag insert">HTML</span>
+						<span className="tag">CSS</span>
+						<span className="tag">JavaScript</span>
+						<span className="tag">ES6</span>
+						<span className="tag">React</span>
+						<span className="tag">Node.js</span>
+						<span className="tag">MySQL</span>
+					</div>
 				</div>
+			</div>
+			<div className="footer_end">
+				<span>Powered by</span>
+				<a href="https://www.w3schools.com/w3css/default.asp" target="black">
+					w3.css
+				</a>
 			</div>
 		</div>
 	);
