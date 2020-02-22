@@ -327,4 +327,7 @@
 		display: block;
 		margin-bottom: 30px;
 	}
+	.footer .footer_box .content_box .title {
+		margin-bottom: 10px;
+	}
 }
