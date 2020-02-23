@@ -1,4 +1,5 @@
 import React from 'react';
+
 import MainPageComponent from 'components/MainPageComponent';
 import SideMenu from 'layout/SideMenu';
 import Footer from 'layout/Footer';
