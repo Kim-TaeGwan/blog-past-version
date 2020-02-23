@@ -3,6 +3,7 @@
 @import "./common.css";
 @import "./layout.css";
 @import "./mainpage.css";
+@import "./studyTable.css";
 
 body {
 	margin: 0;
