@@ -1,0 +1,18 @@
+/* table */
+.table_container {
+  padding: 0 16px;
+}
+
+.table_container table {
+  width: 100%;
+}
+
+.table_container table,
+.table_container th,
+.table_container td {
+  border: 1px solid black;
+}
+
+.table_container td {
+  padding: 5px;
+}
