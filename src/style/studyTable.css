@@ -6,6 +6,9 @@
 .table_container table {
   width: 100%;
 }
+.table_container th {
+  height: 25px;
+}
 
 .table_container table,
 .table_container th,
@@ -15,4 +18,5 @@
 
 .table_container td {
   padding: 5px;
+  height: 30px;
 }
