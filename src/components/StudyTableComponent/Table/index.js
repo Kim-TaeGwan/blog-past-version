@@ -1,8 +1,10 @@
 import React from "react";
+import PartTitle from "../../common/PartTitle";
 
 const TableComponent = () => {
   return (
     <div className="table_container">
+      <PartTitle>StudyTable</PartTitle>
       <table>
         <thead>
           <tr>
