@@ -40,6 +40,13 @@ const TableComponent = () => {
             </td>
             <td>20.02.28</td>
           </tr>
+          <tr>
+            <td>01</td>
+            <td>
+              test5test5test5test5test5test5test5test5test5test5test5test5test5test5test5
+            </td>
+            <td>20.02.28</td>
+          </tr>
         </tbody>
       </table>
     </div>
