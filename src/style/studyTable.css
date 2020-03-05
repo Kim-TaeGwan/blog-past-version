@@ -7,18 +7,16 @@
 .table_container table {
   width: 100%;
   margin-top: 25px;
+  border-spacing: 0;
 }
 .table_container th {
   height: 25px;
 }
 
-.table_container table,
-.table_container th,
-.table_container td {
-  border: 1px solid black;
-}
-
 .table_container td {
   padding: 5px;
   height: 30px;
+}
+.table_container tbody tr:nth-child(odd) {
+  background-color: #fff;
 }
