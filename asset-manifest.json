@@ -1,21 +1,39 @@
 {
   "files": {
-    "main.css": "/Elric.github.io/static/css/main.0e0d11d5.chunk.css",
-    "main.js": "/Elric.github.io/static/js/main.ca857845.chunk.js",
-    "main.js.map": "/Elric.github.io/static/js/main.ca857845.chunk.js.map",
+    "main.css": "/Elric.github.io/static/css/main.bf79adff.chunk.css",
+    "main.js": "/Elric.github.io/static/js/main.91257975.chunk.js",
+    "main.js.map": "/Elric.github.io/static/js/main.91257975.chunk.js.map",
     "runtime-main.js": "/Elric.github.io/static/js/runtime-main.91643977.js",
     "runtime-main.js.map": "/Elric.github.io/static/js/runtime-main.91643977.js.map",
-    "static/js/2.975b65ff.chunk.js": "/Elric.github.io/static/js/2.975b65ff.chunk.js",
-    "static/js/2.975b65ff.chunk.js.map": "/Elric.github.io/static/js/2.975b65ff.chunk.js.map",
+    "static/js/2.7d573362.chunk.js": "/Elric.github.io/static/js/2.7d573362.chunk.js",
+    "static/js/2.7d573362.chunk.js.map": "/Elric.github.io/static/js/2.7d573362.chunk.js.map",
     "index.html": "/Elric.github.io/index.html",
-    "precache-manifest.edee0909c0eb7066284c3350539a8815.js": "/Elric.github.io/precache-manifest.edee0909c0eb7066284c3350539a8815.js",
+    "precache-manifest.acf0527a1e2374a561636963be5b04f8.js": "/Elric.github.io/precache-manifest.acf0527a1e2374a561636963be5b04f8.js",
     "service-worker.js": "/Elric.github.io/service-worker.js",
-    "static/css/main.0e0d11d5.chunk.css.map": "/Elric.github.io/static/css/main.0e0d11d5.chunk.css.map"
+    "static/css/main.bf79adff.chunk.css.map": "/Elric.github.io/static/css/main.bf79adff.chunk.css.map",
+    "static/media/Profile_img.png": "/Elric.github.io/static/media/Profile_img.01d04139.png",
+    "static/media/blog_post_img_01.jpg": "/Elric.github.io/static/media/blog_post_img_01.be4d5fb4.jpg",
+    "static/media/blog_post_img_02.jpg": "/Elric.github.io/static/media/blog_post_img_02.5397831e.jpg",
+    "static/media/box_ico(black).svg": "/Elric.github.io/static/media/box_ico(black).59fd448b.svg",
+    "static/media/close_ico(black).svg": "/Elric.github.io/static/media/close_ico(black).cbe4567e.svg",
+    "static/media/facebook.svg": "/Elric.github.io/static/media/facebook.012e983c.svg",
+    "static/media/gem_ico(black).svg": "/Elric.github.io/static/media/gem_ico(black).8d8cae84.svg",
+    "static/media/github.svg": "/Elric.github.io/static/media/github.0ff1a6f0.svg",
+    "static/media/instagram.svg": "/Elric.github.io/static/media/instagram.3d5d10b8.svg",
+    "static/media/kakaotalk.svg": "/Elric.github.io/static/media/kakaotalk.ce857aeb.svg",
+    "static/media/mail_ico(black).svg": "/Elric.github.io/static/media/mail_ico(black).82189696.svg",
+    "static/media/mail_ico(white).svg": "/Elric.github.io/static/media/mail_ico(white).a1b1533c.svg",
+    "static/media/mountains.jpg": "/Elric.github.io/static/media/mountains.88cb1004.jpg",
+    "static/media/paper_plane_ico(white).svg": "/Elric.github.io/static/media/paper_plane_ico(white).ccd021e3.svg",
+    "static/media/phone_ico(white).svg": "/Elric.github.io/static/media/phone_ico(white).6dbf65e5.svg",
+    "static/media/spot_ico(white).svg": "/Elric.github.io/static/media/spot_ico(white).c27baef8.svg",
+    "static/media/table_ico(black).svg": "/Elric.github.io/static/media/table_ico(black).357c42b0.svg",
+    "static/media/user_ico(black).svg": "/Elric.github.io/static/media/user_ico(black).a617dfb6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.91643977.js",
-    "static/js/2.975b65ff.chunk.js",
-    "static/css/main.0e0d11d5.chunk.css",
-    "static/js/main.ca857845.chunk.js"
+    "static/js/2.7d573362.chunk.js",
+    "static/css/main.bf79adff.chunk.css",
+    "static/js/main.91257975.chunk.js"
   ]
 }
