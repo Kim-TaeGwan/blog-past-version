@@ -64,7 +64,9 @@
   "scripts": {
     "start": "NODE_PATH=src/ node scripts/start",
     "build": "NODE_PATH=src/ node scripts/build",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -133,5 +135,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "homepage": "http://Kim-TaeGwan.github.io/Elric.github.io",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
