@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Elric.github.io/static/css/main.bf79adff.chunk.css",
-    "main.js": "/Elric.github.io/static/js/main.91257975.chunk.js",
-    "main.js.map": "/Elric.github.io/static/js/main.91257975.chunk.js.map",
+    "main.js": "/Elric.github.io/static/js/main.63eac0ad.chunk.js",
+    "main.js.map": "/Elric.github.io/static/js/main.63eac0ad.chunk.js.map",
     "runtime-main.js": "/Elric.github.io/static/js/runtime-main.91643977.js",
     "runtime-main.js.map": "/Elric.github.io/static/js/runtime-main.91643977.js.map",
     "static/js/2.7d573362.chunk.js": "/Elric.github.io/static/js/2.7d573362.chunk.js",
     "static/js/2.7d573362.chunk.js.map": "/Elric.github.io/static/js/2.7d573362.chunk.js.map",
     "index.html": "/Elric.github.io/index.html",
-    "precache-manifest.acf0527a1e2374a561636963be5b04f8.js": "/Elric.github.io/precache-manifest.acf0527a1e2374a561636963be5b04f8.js",
+    "precache-manifest.d5fd5b30c798e9f72767a52aa4853b0d.js": "/Elric.github.io/precache-manifest.d5fd5b30c798e9f72767a52aa4853b0d.js",
     "service-worker.js": "/Elric.github.io/service-worker.js",
     "static/css/main.bf79adff.chunk.css.map": "/Elric.github.io/static/css/main.bf79adff.chunk.css.map",
     "static/media/Profile_img.png": "/Elric.github.io/static/media/Profile_img.01d04139.png",
@@ -34,6 +34,6 @@
     "static/js/runtime-main.91643977.js",
     "static/js/2.7d573362.chunk.js",
     "static/css/main.bf79adff.chunk.css",
-    "static/js/main.91257975.chunk.js"
+    "static/js/main.63eac0ad.chunk.js"
   ]
 }

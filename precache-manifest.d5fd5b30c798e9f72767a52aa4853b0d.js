@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "337250c6212f4b1552f07eb3c0a5b872",
+    "revision": "fa20f6e42920f6f603f49283acfc7c8c",
     "url": "/Elric.github.io/index.html"
   },
   {
-    "revision": "af2fd27b9cbdedd9d335",
+    "revision": "ac796b06d9c786e0f535",
     "url": "/Elric.github.io/static/css/main.bf79adff.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Elric.github.io/static/js/2.7d573362.chunk.js"
   },
   {
-    "revision": "af2fd27b9cbdedd9d335",
-    "url": "/Elric.github.io/static/js/main.91257975.chunk.js"
+    "revision": "ac796b06d9c786e0f535",
+    "url": "/Elric.github.io/static/js/main.63eac0ad.chunk.js"
   },
   {
     "revision": "709c2f5f60070aa59051",
