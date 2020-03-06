@@ -14,7 +14,7 @@ const TableComponent = () => {
           </tr>
           <tr>
             <td>01</td>
-            <td className="title">test2test2test2test2test2</td>
+            <td className="title">test2test2test2test2</td>
             <td>20.02.28</td>
           </tr>
           <tr>
