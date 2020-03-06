@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fa20f6e42920f6f603f49283acfc7c8c",
+    "revision": "b1b9f5ac65ffa0624e39e8939daf4d17",
     "url": "/Elric.github.io/index.html"
   },
   {
-    "revision": "ac796b06d9c786e0f535",
+    "revision": "80134110e58043326653",
     "url": "/Elric.github.io/static/css/main.bf79adff.chunk.css"
   },
   {
-    "revision": "52fa66b74f8c4befa271",
-    "url": "/Elric.github.io/static/js/2.7d573362.chunk.js"
+    "revision": "4de8de51949426bb3b78",
+    "url": "/Elric.github.io/static/js/2.e6904518.chunk.js"
   },
   {
-    "revision": "ac796b06d9c786e0f535",
-    "url": "/Elric.github.io/static/js/main.63eac0ad.chunk.js"
+    "revision": "80134110e58043326653",
+    "url": "/Elric.github.io/static/js/main.85b9e0a8.chunk.js"
   },
   {
     "revision": "709c2f5f60070aa59051",
