@@ -136,7 +136,7 @@
       "react-app"
     ]
   },
-  "homepage": "https://kim-taegwan.github.io/Elric.github.io/",
+  "homepage": "https://kim-taegwan.github.io/MyBlog/",
   "devDependencies": {
     "gh-pages": "^2.2.0"
   }
