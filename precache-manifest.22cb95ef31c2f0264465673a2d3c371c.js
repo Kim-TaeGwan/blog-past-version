@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "723cd8baa8010446814dbf4b330497eb",
+    "revision": "faf712aa8798c265d9f9d9e1abf0980e",
     "url": "/MyBlog/index.html"
   },
   {
-    "revision": "afa77dd3ce14cb96a7b3",
+    "revision": "73fd1753eae980778a1b",
     "url": "/MyBlog/static/css/main.bf79adff.chunk.css"
   },
   {
-    "revision": "4de8de51949426bb3b78",
-    "url": "/MyBlog/static/js/2.e6904518.chunk.js"
+    "revision": "df7fbb45e373356d7861",
+    "url": "/MyBlog/static/js/2.85e0f8f2.chunk.js"
   },
   {
-    "revision": "afa77dd3ce14cb96a7b3",
-    "url": "/MyBlog/static/js/main.5bd46bfb.chunk.js"
+    "revision": "73fd1753eae980778a1b",
+    "url": "/MyBlog/static/js/main.131eaca8.chunk.js"
   },
   {
     "revision": "270e3012cf1a6e278fea",
@@ -54,10 +54,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3d5d10b881e444c6fea07b13c9e8e29d",
     "url": "/MyBlog/static/media/instagram.3d5d10b8.svg"
-  },
-  {
-    "revision": "ce857aebea79196a067dd4ddfd2d5798",
-    "url": "/MyBlog/static/media/kakaotalk.ce857aeb.svg"
   },
   {
     "revision": "82189696539164bc0b0e271a3bcac397",
