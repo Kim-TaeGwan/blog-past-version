@@ -8,7 +8,7 @@ import mail_ico_black from "assets/icon/mail_ico(black).svg";
 import table_ico_black from "assets/icon/table_ico(black).svg";
 import insta from "assets/icon/instagram.svg";
 import facebook from "assets/icon/facebook.svg";
-import kakao from "assets/icon/kakaotalk.svg";
+// import kakao from "assets/icon/kakaotalk.svg";
 import github from "assets/icon/github.svg";
 import profile_img from "assets/image/Profile_img.png";
 
@@ -78,16 +78,24 @@ const SideMenu = props => {
       </div>
       <div className="sns_list">
         <span>
-          <img src={insta} alt="insta" width="100%" height="100%" />
+          <a href="https://www.instagram.com/k.taegwan/" target="blank">
+            <img src={insta} alt="insta" width="100%" height="100%" />
+          </a>
         </span>
         <span>
-          <img src={facebook} alt="facebook" width="100%" height="100%" />
+          <a href="https://www.facebook.com/taegwan.kim.90" target="blank">
+            <img src={facebook} alt="facebook" width="100%" height="100%" />
+          </a>
         </span>
+        {/* <span>
+          <a>
+            <img src={kakao} alt="kakao" width="100%" height="100%" />
+          </a>
+        </span> */}
         <span>
-          <img src={kakao} alt="kakao" width="100%" height="100%" />
-        </span>
-        <span>
-          <img src={github} alt="github" width="100%" height="100%" />
+          <a href="https://github.com/Kim-TaeGwan" target="blank">
+            <img src={github} alt="github" width="100%" height="100%" />
+          </a>
         </span>
       </div>
     </div>
