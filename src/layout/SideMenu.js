@@ -14,11 +14,27 @@ import github from "assets/icon/github.svg";
 import profile_img from "assets/image/Profile_img.png";
 
 const SideMenu = ({ onClick }) => {
-  const test = async () => {
+  const study = async () => {
     try {
       const result = await axios.post(
         "http://localhost:4000/api",
         { gg: 123 },
+        {
+          params: {
+            test: 1
+          }
+        }
+      );
+      console.log(result);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  const portfolio = async () => {
+    try {
+      const result = await axios.post(
+        "http://localhost:4000/api",
+        { gg: 456 },
         {
           params: {
             test: 1
@@ -53,7 +69,7 @@ const SideMenu = ({ onClick }) => {
                   height="100%"
                 />
               </span>
-              <span> PORTFOLIO </span>
+              <span onClick={portfolio}> PORTFOLIO </span>
             </Link>
           </li>
           <li>
@@ -65,7 +81,7 @@ const SideMenu = ({ onClick }) => {
                 height="100%"
               />
             </span>
-            <span onClick={test}> ABOUT </span>
+            <span> ABOUT </span>
           </li>
           <li>
             <span className="ico">
@@ -88,7 +104,7 @@ const SideMenu = ({ onClick }) => {
                   height="100%"
                 />
               </span>
-              <span> STUDY TABLE </span>
+              <span onClick={study}> STUDY TABLE </span>
             </Link>
           </li>
         </ul>
