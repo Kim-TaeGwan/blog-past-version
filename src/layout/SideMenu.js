@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 import box_ico_black from "assets/icon/box_ico(black).svg";
 import close_ico from "assets/icon/close_ico(black).svg";
@@ -12,8 +13,16 @@ import kakao from "assets/icon/kakaotalk.svg";
 import github from "assets/icon/github.svg";
 import profile_img from "assets/image/Profile_img.png";
 
-const SideMenu = props => {
-  const { onClick } = props;
+const SideMenu = ({ onClick }) => {
+  const test = async () => {
+    try {
+      const result = await axios.get("http://localhost:4000/api");
+      console.log(result);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div className="sideMenu" id="mySidenav">
       <div className="close_ico" onClick={onClick}>
@@ -48,7 +57,7 @@ const SideMenu = props => {
                 height="100%"
               />
             </span>
-            <span> ABOUT </span>
+            <span onClick={test}> ABOUT </span>
           </li>
           <li>
             <span className="ico">
