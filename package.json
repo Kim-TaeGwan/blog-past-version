@@ -134,5 +134,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "homepage": "https://kim-taegwan.github.io/MyBlog/",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
