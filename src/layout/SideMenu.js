@@ -16,7 +16,15 @@ import profile_img from "assets/image/Profile_img.png";
 const SideMenu = ({ onClick }) => {
   const test = async () => {
     try {
-      const result = await axios.get("http://localhost:4000/api");
+      const result = await axios.post(
+        "http://localhost:4000/api",
+        { gg: 123 },
+        {
+          params: {
+            test: 1
+          }
+        }
+      );
       console.log(result);
     } catch (error) {
       console.error(error);
