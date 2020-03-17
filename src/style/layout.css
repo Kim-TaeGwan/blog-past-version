@@ -10,7 +10,7 @@
 .container {
   background-size: cover;
   margin: auto;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .container .wrapper {
