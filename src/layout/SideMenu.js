@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
 import box_ico_black from "assets/icon/box_ico(black).svg";
 import close_ico from "assets/icon/close_ico(black).svg";
@@ -14,39 +13,6 @@ import github from "assets/icon/github.svg";
 import profile_img from "assets/image/Profile_img.png";
 
 const SideMenu = ({ onClick }) => {
-  const study = async () => {
-    try {
-      const result = await axios.post(
-        "http://localhost:4000/api",
-        { gg: 123 },
-        {
-          params: {
-            test: 1
-          }
-        }
-      );
-      console.log(result);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-  const portfolio = async () => {
-    try {
-      const result = await axios.post(
-        "http://localhost:4000/api",
-        { gg: 456 },
-        {
-          params: {
-            test: 1
-          }
-        }
-      );
-      console.log(result);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
   return (
     <div className="sideMenu" id="mySidenav">
       <div className="close_ico" onClick={onClick}>
@@ -69,7 +35,7 @@ const SideMenu = ({ onClick }) => {
                   height="100%"
                 />
               </span>
-              <span onClick={portfolio}> PORTFOLIO </span>
+              <span> PORTFOLIO </span>
             </Link>
           </li>
           <li>
@@ -104,7 +70,7 @@ const SideMenu = ({ onClick }) => {
                   height="100%"
                 />
               </span>
-              <span onClick={study}> STUDY TABLE </span>
+              <span> STUDY TABLE </span>
             </Link>
           </li>
         </ul>
