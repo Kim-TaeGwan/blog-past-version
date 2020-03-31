@@ -1,17 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Portfolio from "../../common/Portfolio";
 import PageList from "../../common/PageList";
 
+const portfolioList = [1, 2, 3, 4];
+
 const PortfolioList = () => {
+  const [list, setList] = useState(portfolioList);
   return (
     <>
       <div className="portfolio_list">
-        <Portfolio />
-        <Portfolio />
-        <Portfolio />
-        <Portfolio />
-        <Portfolio />
-        <Portfolio />
+        {list.map(i => (
+          <Portfolio key={i} />
+        ))}
       </div>
       <PageList />
     </>
