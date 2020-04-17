@@ -16,5 +16,5 @@ export const portfolioApi = axios.create({
 });
 
 export const studyApi = axios.create({
-  baseURL: `${BACKEND_URL}/study`,
+  baseURL: `${BACKEND_URL}/api/study`,
 });

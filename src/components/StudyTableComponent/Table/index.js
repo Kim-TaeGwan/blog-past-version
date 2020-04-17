@@ -1,18 +1,37 @@
-import React from "react";
-import PartTitle from "../../common/PartTitle";
+import React, { useState, useEffect } from "react";
+import PartTitle from "components/common/PartTitle";
+import TableItem from "./TableItem.js";
+import { studyApi } from "shared/Api";
 
 const TableComponent = () => {
+  const [list, setList] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    async function fetchStudyList() {
+      setIsLoading(true);
+      try {
+        const result = await studyApi.get("/");
+        setList(result.data);
+      } catch (error) {
+        console.log(error);
+      }
+      setIsLoading(false);
+    }
+    fetchStudyList();
+  }, []);
+
   return (
     <div className="table_container">
       <PartTitle>StudyTable</PartTitle>
       <table>
         <tbody>
-          <tr>
-            <td>01</td>
-            <td className="title">test1test1test1test1</td>
-            <td>20.02.28</td>
-          </tr>
-          <tr>
+          {isLoading && <div>로더</div>}
+          {list &&
+            list.map((item, i) => (
+              <TableItem title={item.title} date={item.date} number={item.i} />
+            ))}
+          {/* <tr>
             <td>01</td>
             <td className="title">test2test2test2test2</td>
             <td>20.02.28</td>
@@ -31,7 +50,7 @@ const TableComponent = () => {
             <td>01</td>
             <td className="title">test5test5</td>
             <td>20.02.28</td>
-          </tr>
+          </tr> */}
         </tbody>
       </table>
     </div>
