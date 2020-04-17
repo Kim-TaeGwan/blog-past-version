@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b7250c8efa90b70ccd999c8d6fa15c8a",
+    "revision": "06bf2947fcbd0616aeaa096919f874cc",
     "url": "/MyBlog/index.html"
   },
   {
-    "revision": "bff4ee588e9860e0dacd",
-    "url": "/MyBlog/static/css/main.723f368f.chunk.css"
+    "revision": "9b14ad8f8219d19052b4",
+    "url": "/MyBlog/static/css/main.9766be8d.chunk.css"
   },
   {
-    "revision": "55e6201bd58f2d5c1e8f",
-    "url": "/MyBlog/static/js/2.eb95765b.chunk.js"
+    "revision": "b290fd97750d639a360e",
+    "url": "/MyBlog/static/js/2.c1cbb0bf.chunk.js"
   },
   {
-    "revision": "bff4ee588e9860e0dacd",
-    "url": "/MyBlog/static/js/main.c5e9b190.chunk.js"
+    "revision": "9b14ad8f8219d19052b4",
+    "url": "/MyBlog/static/js/main.abfeb1a1.chunk.js"
   },
   {
     "revision": "270e3012cf1a6e278fea",
@@ -62,10 +62,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a1b1533cc5299b0bfc0fbf8ead74352a",
     "url": "/MyBlog/static/media/mail_ico(white).a1b1533c.svg"
-  },
-  {
-    "revision": "88cb10046b8ed381e64fb05c3765c1f0",
-    "url": "/MyBlog/static/media/mountains.88cb1004.jpg"
   },
   {
     "revision": "ccd021e399a0f5120f626f841f1b13d2",

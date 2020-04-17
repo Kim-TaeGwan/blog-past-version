@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/MyBlog/static/css/main.723f368f.chunk.css",
-    "main.js": "/MyBlog/static/js/main.c5e9b190.chunk.js",
-    "main.js.map": "/MyBlog/static/js/main.c5e9b190.chunk.js.map",
+    "main.css": "/MyBlog/static/css/main.9766be8d.chunk.css",
+    "main.js": "/MyBlog/static/js/main.abfeb1a1.chunk.js",
+    "main.js.map": "/MyBlog/static/js/main.abfeb1a1.chunk.js.map",
     "runtime-main.js": "/MyBlog/static/js/runtime-main.01b47002.js",
     "runtime-main.js.map": "/MyBlog/static/js/runtime-main.01b47002.js.map",
-    "static/js/2.eb95765b.chunk.js": "/MyBlog/static/js/2.eb95765b.chunk.js",
-    "static/js/2.eb95765b.chunk.js.map": "/MyBlog/static/js/2.eb95765b.chunk.js.map",
+    "static/js/2.c1cbb0bf.chunk.js": "/MyBlog/static/js/2.c1cbb0bf.chunk.js",
+    "static/js/2.c1cbb0bf.chunk.js.map": "/MyBlog/static/js/2.c1cbb0bf.chunk.js.map",
     "index.html": "/MyBlog/index.html",
-    "precache-manifest.d6c1d3655af907180abab54f66392d88.js": "/MyBlog/precache-manifest.d6c1d3655af907180abab54f66392d88.js",
+    "precache-manifest.2df4a8585be8bc97c0700da19f955e85.js": "/MyBlog/precache-manifest.2df4a8585be8bc97c0700da19f955e85.js",
     "service-worker.js": "/MyBlog/service-worker.js",
-    "static/css/main.723f368f.chunk.css.map": "/MyBlog/static/css/main.723f368f.chunk.css.map",
+    "static/css/main.9766be8d.chunk.css.map": "/MyBlog/static/css/main.9766be8d.chunk.css.map",
     "static/media/Profile_img.png": "/MyBlog/static/media/Profile_img.01d04139.png",
     "static/media/blog_post_img_01.jpg": "/MyBlog/static/media/blog_post_img_01.be4d5fb4.jpg",
     "static/media/blog_post_img_02.jpg": "/MyBlog/static/media/blog_post_img_02.5397831e.jpg",
@@ -22,7 +22,6 @@
     "static/media/instagram.svg": "/MyBlog/static/media/instagram.3d5d10b8.svg",
     "static/media/mail_ico(black).svg": "/MyBlog/static/media/mail_ico(black).82189696.svg",
     "static/media/mail_ico(white).svg": "/MyBlog/static/media/mail_ico(white).a1b1533c.svg",
-    "static/media/mountains.jpg": "/MyBlog/static/media/mountains.88cb1004.jpg",
     "static/media/paper_plane_ico(white).svg": "/MyBlog/static/media/paper_plane_ico(white).ccd021e3.svg",
     "static/media/phone_ico(white).svg": "/MyBlog/static/media/phone_ico(white).6dbf65e5.svg",
     "static/media/spot_ico(white).svg": "/MyBlog/static/media/spot_ico(white).c27baef8.svg",
@@ -31,8 +30,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.01b47002.js",
-    "static/js/2.eb95765b.chunk.js",
-    "static/css/main.723f368f.chunk.css",
-    "static/js/main.c5e9b190.chunk.js"
+    "static/js/2.c1cbb0bf.chunk.js",
+    "static/css/main.9766be8d.chunk.css",
+    "static/js/main.abfeb1a1.chunk.js"
   ]
 }
