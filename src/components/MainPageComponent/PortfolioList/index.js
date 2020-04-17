@@ -47,7 +47,7 @@ const PortfolioList = () => {
         {isLoading && <div>로더</div>}
         {list &&
           list.map((item, i) => (
-            <a key={i} href={item.url}>
+            <a key={i} href={item.url} target="black">
               <Portfolio
                 title={item.title}
                 comment={item.comment}
