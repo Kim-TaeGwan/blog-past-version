@@ -3,18 +3,6 @@ import Portfolio from "components/common/Portfolio";
 import PageList from "components/common/PageList";
 
 import { portfolioApi } from "shared/Api";
-import { Link } from "react-router-dom";
-
-// const portfolioList = [1, 2, 3, 4];
-const portfolioList = [
-  {
-    title: "WEBAPPLAYERS",
-    comment: "첫번째 작업물, 반응형 X",
-    img_url:
-      "https://elric-blog.s3.ap-northeast-2.amazonaws.com/PortfoiloThumbnail/firstPortFolio.PNG",
-    url: "http://elric.dothome.co.kr/",
-  },
-];
 
 const PortfolioList = () => {
   const [list, setList] = useState([]);
