@@ -13,6 +13,7 @@ const TableComponent = () => {
       try {
         const result = await studyApi.get("/");
         setList(result.data);
+        console.log(result);
       } catch (error) {
         console.log(error);
       }
@@ -29,7 +30,7 @@ const TableComponent = () => {
           {isLoading && <div>로더</div>}
           {list &&
             list.map((item, i) => (
-              <TableItem title={item.title} date={item.date} number={item.i} />
+              <TableItem title={item.title} date={item.date} number={i + 1} />
             ))}
           {/* <tr>
             <td>01</td>
