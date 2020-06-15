@@ -17,6 +17,10 @@
 .portfolio_list {
   padding: 0 16px;
 }
+.portfolio_list a{
+  text-decoration: none;
+  color: #000;
+}
 /* TechnicalSkills */
 .technical_skills {
   padding: 0 16px;
