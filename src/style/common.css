@@ -10,9 +10,12 @@
 
 /* Portfolio */
 .portfolio {
-  width: calc(33.3% - 8px);
+  width: 33.3%;
   margin-bottom: 15px;
+  padding: 0 8px;
+  box-sizing: border-box;
   display: inline-block;
+  vertical-align: top;
   font-size: 15px;
 }
 .portfolio:nth-child(3n - 1) {
@@ -20,6 +23,7 @@
 }
 .portfolio .portfolio_img img {
   vertical-align: middle;
+  height: 180px;
 }
 .portfolio .portfolio_img img:hover {
   opacity: 0.6;
@@ -27,6 +31,7 @@
 .portfolio_info {
   background-color: #fff;
   padding: 15px;
+  height: 160px;
 }
 .portfolio_info p {
   margin: 0;
@@ -43,6 +48,13 @@
   }
   .portfolio:nth-child(3n - 1) {
     margin: 0;
+  }
+  .portfolio .portfolio_img img {
+    vertical-align: middle;
+    height: 230px;
+  }
+  .portfolio_info{
+    max-height: 140px;
   }
 }
 
