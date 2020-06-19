@@ -21,6 +21,9 @@
 .portfolio:nth-child(3n - 1) {
   margin: 0 12px;
 }
+.portfolio .portfolio_img{
+  border-bottom: 1px solid #888;
+}
 .portfolio .portfolio_img img {
   vertical-align: middle;
   height: 163px;
