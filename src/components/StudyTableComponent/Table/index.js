@@ -30,7 +30,7 @@ const TableComponent = () => {
           {isLoading && <div>로더</div>}
           {list &&
             list.map((item, i) => (
-              <TableItem title={item.title} date={item.date} number={i + 1} />
+              <TableItem title={item.title} date={item.date} number={i + 1} category={item.category} />
             ))}
           {/* <tr>
             <td>01</td>
