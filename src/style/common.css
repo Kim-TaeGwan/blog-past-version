@@ -10,23 +10,32 @@
 
 /* Portfolio */
 .portfolio {
-  width: calc(33.3% - 8px);
+  width: 33.3%;
+  padding: 0 8px;
   margin-bottom: 15px;
   display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
   font-size: 15px;
 }
 .portfolio:nth-child(3n - 1) {
   margin: 0 12px;
 }
+.portfolio .portfolio_img{
+  border-bottom: 1px solid #888;
+}
 .portfolio .portfolio_img img {
   vertical-align: middle;
+  height: 163px;
 }
 .portfolio .portfolio_img img:hover {
   opacity: 0.6;
 }
 .portfolio_info {
+  height: 140px;
   background-color: #fff;
   padding: 15px;
+  box-sizing: border-box;
 }
 .portfolio_info p {
   margin: 0;
@@ -43,6 +52,9 @@
   }
   .portfolio:nth-child(3n - 1) {
     margin: 0;
+  }
+  .portfolio .portfolio_img img {
+    height: 230px;
   }
 }
 

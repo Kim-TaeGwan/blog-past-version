@@ -1,8 +1,13 @@
 import React from "react";
 
-const TableItem = ({ title, date, number, category }) => {
+const TableItem = ({ title, date, number, url,category }) => {
+  const notionUrl = () => {
+    let openNewWindow = window.open("about:blank");
+    openNewWindow.location.href = `${url}`;
+
+  }
   return (
-    <tr>
+    <tr onClick={notionUrl} className={`as`}>
       <td>{number}</td>
       <td>{category}</td>
       <td className="title">{title}</td>
