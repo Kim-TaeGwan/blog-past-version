@@ -4,7 +4,9 @@ axios.defaults.headers.common = {
   Pragma: "no-cache",
 };
 
-const BACKEND_URL = "http://127.0.0.1:4000";
+// const BACKEND_URL = "http://127.0.0.1:4000"; 로컬서버
+const BACKEND_URL = "https://blog-back-server.herokuapp.com"; // heroku 서버
+
 // console.log(process.env);
 
 export const mainApi = axios.create({
