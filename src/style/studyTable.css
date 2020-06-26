@@ -23,6 +23,7 @@
 }
 .table_container table tbody tr .title {
   width: 100%;
+  cursor: pointer;
 }
 .table_container td {
   padding: 5px;
