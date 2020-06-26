@@ -94,7 +94,7 @@
 .SkillsBar span {
   font-size: 15px;
   display: inline-block; /* 마진겹침현상때문에   */
-  margin: 15px 0;
+  margin-top: 15px;
 }
 .SkillsBar .skillbar_body {
   width: 100%;
