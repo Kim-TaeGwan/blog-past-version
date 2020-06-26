@@ -32,7 +32,7 @@ const PortfolioList = () => {
   return (
     <>
       <div className="portfolio_list">
-        {isLoading && <div>로더</div>}
+        {isLoading && <div className="loader" />}
         {list &&
           list.map((item, i) => (
             <a key={i} href={item.url} target="black">

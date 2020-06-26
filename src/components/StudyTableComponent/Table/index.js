@@ -25,7 +25,7 @@ const TableComponent = () => {
   return (
     <div className="table_container">
       <PartTitle>StudyTable</PartTitle>
-          {isLoading && <div>로더</div>}
+        {isLoading && <div className="loader" />}
       <table>
         <tbody>
           {list &&
