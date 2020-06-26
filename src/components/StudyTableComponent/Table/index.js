@@ -25,12 +25,12 @@ const TableComponent = () => {
   return (
     <div className="table_container">
       <PartTitle>StudyTable</PartTitle>
+          {isLoading && <div>로더</div>}
       <table>
         <tbody>
-          {isLoading && <div>로더</div>}
           {list &&
             list.map((item, i) => (
-              <TableItem title={item.title} date={item.date} number={i + 1} category={item.category} url={item.url} />
+              <TableItem key={i} title={item.title} date={item.date} number={i + 1} category={item.category} url={item.url} />
             ))}
           {/* <tr>
             <td>01</td>
