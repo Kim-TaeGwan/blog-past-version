@@ -8,7 +8,7 @@ import spot_ico from '../../../assets/icon/spot_ico(white).svg';
 const ContactInformation = () => {
 	return (
 		<div className="contact_information">
-			<ContactInformationList srcIco={mail_ico} children="react-developer@naver.com" />
+			<ContactInformationList srcIco={mail_ico} children="react-developer@kakao.com" />
 			<ContactInformationList srcIco={spot_ico} children="Seoul, Korea" />
 			<ContactInformationList srcIco={phone_ico} children="010-3520-3951" />
 		</div>

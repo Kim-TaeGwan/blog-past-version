@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import box_ico_black from "assets/icon/box_ico(black).svg";
 import close_ico from "assets/icon/close_ico(black).svg";
@@ -11,6 +10,9 @@ import facebook from "assets/icon/facebook.svg";
 // import kakao from "assets/icon/kakaotalk.svg";
 import github from "assets/icon/github.svg";
 import profile_img from "assets/image/Profile_img.png";
+
+import SnsList from "./Items/SnsList";
+import MenuList from "./Items/MenuList";
 
 const SideMenu = ({ onClick }) => {
   return (
@@ -25,77 +27,17 @@ const SideMenu = ({ onClick }) => {
       <div className="noti"> Template by W3.CSS </div>
       <div className="menu_list">
         <ul>
-          <li>
-            <Link to="/">
-              <span className="ico">
-                <img
-                  src={box_ico_black}
-                  alt="side_menu_ico"
-                  width="100%"
-                  height="100%"
-                />
-              </span>
-              <span> PORTFOLIO </span>
-            </Link>
-          </li>
-          <li>
-            <span className="ico">
-              <img
-                src={user_ico_black}
-                alt="side_menu_ico"
-                width="100%"
-                height="100%"
-              />
-            </span>
-            <span> ABOUT </span>
-          </li>
-          <li>
-            <span className="ico">
-              <img
-                src={mail_ico_black}
-                alt="side_menu_ico"
-                width="100%"
-                height="100%"
-              />
-            </span>
-            <span> CONTACT </span>
-          </li>
-          <li>
-            <Link to="/studyTable">
-              <span className="ico">
-                <img
-                  src={table_ico_black}
-                  alt="side_menu_ico"
-                  width="100%"
-                  height="100%"
-                />
-              </span>
-              <span> STUDY TABLE </span>
-            </Link>
-          </li>
+          <MenuList link="/" img={box_ico_black} menu="PORTFOLIO" />
+          <MenuList  img={user_ico_black} menu="ABOUT" />
+          <MenuList  img={mail_ico_black} menu="CONTACT" />
+          <MenuList link="/studyTable" img={table_ico_black} menu="STUDY TABLE" />
         </ul>
       </div>
       <div className="sns_list">
-        <span>
-          <a href="https://www.instagram.com/k.taegwan/" target="blank">
-            <img src={insta} alt="insta" width="100%" height="100%" />
-          </a>
-        </span>
-        <span>
-          <a href="https://www.facebook.com/taegwan.kim.90" target="blank">
-            <img src={facebook} alt="facebook" width="100%" height="100%" />
-          </a>
-        </span>
-        {/* <span>
-          <a>
-            <img src={kakao} alt="kakao" width="100%" height="100%" />
-          </a>
-        </span> */}
-        <span>
-          <a href="https://github.com/Kim-TaeGwan" target="blank">
-            <img src={github} alt="github" width="100%" height="100%" />
-          </a>
-        </span>
+        <SnsList href="https://www.instagram.com/k.taegwan/" img={insta} alt="insta" />
+        <SnsList href="https://www.facebook.com/taegwan.kim.90" img={facebook} alt="facebook" />
+        {/* <SnsList href="https://www.facebook.com/taegwan.kim.90" img={kakao} alt="kakao" /> */}
+        <SnsList href="https://github.com/Kim-TaeGwan" img={github} alt="github" />
       </div>
     </div>
   );
