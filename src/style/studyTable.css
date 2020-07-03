@@ -15,11 +15,13 @@
 }
 
 .table_container table tbody tr td:first-child {
-  padding: 5px 16px;
+  padding: 5px 5px;
 }
 .table_container table tbody tr td:last-child {
+  width: 100px;
+  display: block;
   text-align: right;
-  padding-right: 16px;
+  padding-right: 5px;
 }
 .table_container table tbody tr .category{
   font-size: 13px;
@@ -31,6 +33,7 @@
 .table_container td {
   padding: 5px;
   height: 30px;
+  line-height: 30px;
 }
 .table_container tbody tr:nth-child(odd) {
   background-color: #fff;

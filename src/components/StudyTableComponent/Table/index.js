@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import moment from 'moment';
 import PartTitle from "components/common/PartTitle";
 import TableItem from "./TableItem.js";
 import { studyApi } from "shared/Api";
@@ -30,7 +31,8 @@ const TableComponent = () => {
         <tbody>
           {list &&
             list.map((item, i) => (
-              <TableItem key={i} title={item.title} date={item.date} number={i + 1} category={item.category} url={item.url} />
+              // <TableItem key={i} title={item.title} date={item.date} number={i + 1} category={item.category} url={item.url} />
+              <TableItem key={i} title={item.title} date={moment(item.dete).format("YY.MM.DD HH:mm")} category={item.category} url={item.url} />
             ))}
           {/* <tr>
             <td>01</td>

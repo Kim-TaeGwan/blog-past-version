@@ -8,7 +8,6 @@ const TableItem = ({ title, date, number, url,category }) => {
   }
   return (
     <tr onClick={notionUrl} className={`as`}>
-      <td>{number}</td>
       <td className="category">{category}</td>
       <td className="title">{title}</td>
       <td>{date}</td>
