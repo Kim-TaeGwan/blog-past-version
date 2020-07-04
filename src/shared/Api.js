@@ -20,3 +20,7 @@ export const portfolioApi = axios.create({
 export const studyApi = axios.create({
   baseURL: `${BACKEND_URL}/api/study`,
 });
+
+export const nodemailerRouter = axios.create({
+  baseURL: `${BACKEND_URL}/routes`,
+})
