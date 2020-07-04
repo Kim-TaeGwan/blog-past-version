@@ -7,13 +7,15 @@ import paper_plane_ico from '../../../assets/icon/paper_plane_ico(white).svg';
 const ContactInput = () => {
 	return (
 		<div className="contact_input">
-			<ContactInputList title="Name" inputName="Name" />
-			<ContactInputList title="Email" inputName="Email" />
-			<ContactInputList title="Message" inputName="Message" />
-			<button type="submit">
-				<img src={paper_plane_ico} alt="paper_plane_ico" width="15px" height="15px" />
-				<span>Sand Message</span>
-			</button>
+			<form action="/nodemailer" method="post">
+				<ContactInputList title="Name" inputName="Name" />
+				<ContactInputList title="Email" inputName="Email" />
+				<ContactInputList title="Message" inputName="Message" />
+				<button type="submit">
+					<img src={paper_plane_ico} alt="paper_plane_ico" width="15px" height="15px" />
+					<span>Sand Message</span>
+				</button>
+			</form>
 		</div>
 	);
 };
