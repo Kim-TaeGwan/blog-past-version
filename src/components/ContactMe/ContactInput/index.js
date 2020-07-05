@@ -7,7 +7,7 @@ import paper_plane_ico from '../../../assets/icon/paper_plane_ico(white).svg';
 const ContactInput = () => {
 	return (
 		<div className="contact_input">
-			<form action="/nodemailer" method="post">
+			<form action="/nodemailer" method="get">
 				<ContactInputList title="Name" inputName="Name" />
 				<ContactInputList title="Email" inputName="Email" />
 				<ContactInputList title="Message" inputName="Message" />
