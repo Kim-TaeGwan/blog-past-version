@@ -27,6 +27,7 @@
 }
 .table_container table tbody tr .category{
   font-size: 13px;
+  text-align: center;
 }
 .table_container table tbody tr .title {
   width: 100%;
