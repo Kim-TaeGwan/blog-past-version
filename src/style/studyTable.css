@@ -13,7 +13,9 @@
 .table_container th {
   height: 25px;
 }
-
+.table_container table tbody tr:hover .title{
+  text-decoration: underline;
+}
 .table_container table tbody tr td:first-child {
   padding: 5px 5px;
 }
