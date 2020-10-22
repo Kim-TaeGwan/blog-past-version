@@ -28,16 +28,32 @@ const SideMenu = ({ onClick }) => {
       <div className="menu_list">
         <ul>
           <MenuList link="/" img={box_ico_black} menu="PORTFOLIO" />
-          <MenuList  img={user_ico_black} menu="ABOUT" />
-          <MenuList  img={mail_ico_black} menu="CONTACT" />
-          <MenuList link="/studyTable" img={table_ico_black} menu="STUDY TABLE" />
+          <MenuList link="/" img={user_ico_black} menu="ABOUT" />
+          <MenuList link="/" img={mail_ico_black} menu="CONTACT" />
+          <MenuList
+            link="/studyTable"
+            img={table_ico_black}
+            menu="STUDY TABLE"
+          />
         </ul>
       </div>
       <div className="sns_list">
-        <SnsList href="https://www.instagram.com/k.taegwan/" img={insta} alt="insta" />
-        <SnsList href="https://www.facebook.com/taegwan.kim.90" img={facebook} alt="facebook" />
+        <SnsList
+          href="https://www.instagram.com/k.taegwan/"
+          img={insta}
+          alt="insta"
+        />
+        <SnsList
+          href="https://www.facebook.com/taegwan.kim.90"
+          img={facebook}
+          alt="facebook"
+        />
         {/* <SnsList href="https://www.facebook.com/taegwan.kim.90" img={kakao} alt="kakao" /> */}
-        <SnsList href="https://github.com/Kim-TaeGwan" img={github} alt="github" />
+        <SnsList
+          href="https://github.com/Kim-TaeGwan"
+          img={github}
+          alt="github"
+        />
       </div>
     </div>
   );
