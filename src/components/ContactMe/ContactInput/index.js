@@ -19,7 +19,7 @@ const ContactInput = () => {
       message,
     };
     // fetch("http://localhost:4000/api/sendEmail/sendEmail", {
-    fetch(`https://blog-back-server.herokuapp.com/api/sendEmail/sendEmail`, {
+    fetch("https://blog-back-server.herokuapp.com/api/sendEmail/sendEmail", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
