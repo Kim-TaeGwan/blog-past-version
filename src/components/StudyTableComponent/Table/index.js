@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import moment from 'moment';
+import moment from "moment";
 import PartTitle from "components/common/PartTitle";
 import TableItem from "./TableItem.js";
 import { studyApi } from "shared/Api";
@@ -14,7 +14,7 @@ const TableComponent = () => {
       try {
         const result = await studyApi.get("/");
         setList(result.data);
-        console.log(result);
+        // console.log(result);
       } catch (error) {
         console.log(error);
       }
@@ -26,13 +26,19 @@ const TableComponent = () => {
   return (
     <div className="table_container">
       <PartTitle>StudyTable</PartTitle>
-        {isLoading && <div className="loader" />}
+      {isLoading && <div className="loader" />}
       <table>
         <tbody>
           {list &&
             list.map((item, i) => (
               // <TableItem key={i} title={item.title} date={item.date} number={i + 1} category={item.category} url={item.url} />
-              <TableItem key={i} title={item.title} date={moment(item.dete).format("YY.MM.DD HH:mm")} category={item.category} url={item.url} />
+              <TableItem
+                key={i}
+                title={item.title}
+                date={moment(item.dete).format("YY.MM.DD HH:mm")}
+                category={item.category}
+                url={item.url}
+              />
             ))}
           {/* <tr>
             <td>01</td>

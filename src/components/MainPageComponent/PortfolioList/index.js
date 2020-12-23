@@ -27,7 +27,7 @@ const PortfolioList = () => {
     fetchPortfolioList();
   }, []);
 
-  console.log(list);
+  // console.log(list);
 
   return (
     <>
