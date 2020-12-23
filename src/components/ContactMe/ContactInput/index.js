@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import ContactInputList from "./ContactInputList";
 
+// import { nodemailerApi } from "shared/Api";
+
 import paper_plane_ico from "../../../assets/icon/paper_plane_ico(white).svg";
 
 const ContactInput = () => {
@@ -16,7 +18,8 @@ const ContactInput = () => {
       email,
       message,
     };
-    fetch("http://localhost:4000/api/sendEmail/sendEmail", {
+    // fetch("http://localhost:4000/api/sendEmail/sendEmail", {
+    fetch(`https://blog-back-server.herokuapp.com/api/sendEmail/sendEmail`, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
