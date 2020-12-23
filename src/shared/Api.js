@@ -4,8 +4,8 @@ axios.defaults.headers.common = {
   Pragma: "no-cache",
 };
 
-// const BACKEND_URL = "http://127.0.0.1:4000"; // 로컬서버
-const BACKEND_URL = "https://blog-back-server.herokuapp.com"; // heroku 서버
+const BACKEND_URL = "http://127.0.0.1:4000"; // 로컬서버
+// const BACKEND_URL = "https://blog-back-server.herokuapp.com"; // heroku 서버
 
 // console.log(process.env);
 
@@ -21,6 +21,6 @@ export const studyApi = axios.create({
   baseURL: `${BACKEND_URL}/api/study`,
 });
 
-export const nodemailerRouter = axios.create({
-  baseURL: `${BACKEND_URL}/routes`,
-})
+export const nodemailerApi = axios.create({
+  baseURL: `${BACKEND_URL}/api/sendEmail/sendEmail`,
+});
