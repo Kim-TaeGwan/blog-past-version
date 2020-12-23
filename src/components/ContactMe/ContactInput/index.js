@@ -24,9 +24,8 @@ const ContactInput = () => {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
-    })
-      .then(res => res.json())
-      .then(json => {});
+    }).then(res => res.json());
+    // .then(json => {});
     console.log(name, email, message);
   };
 
