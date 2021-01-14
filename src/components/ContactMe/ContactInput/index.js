@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import ContactInputList from "./ContactInputList";
 
@@ -6,39 +6,47 @@ import ContactInputList from "./ContactInputList";
 
 import paper_plane_ico from "assets/icon/paper_plane_ico(white).svg";
 
-const ContactInput = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+const ContactInput = ({
+  name,
+  handleName,
+  email,
+  handleEmail,
+  message,
+  handleMessage,
+  sendMail,
+}) => {
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [message, setMessage] = useState("");
 
-  const sendMail = e => {
-    e.preventDefault();
-    const data = {
-      name,
-      email,
-      message,
-    };
-    // fetch("http://localhost:4000/api/sendEmail/sendEmail", {
-    fetch("https://blog-back-server.herokuapp.com/api/sendEmail/sendEmail", {
-      // fetch(nodemailerApi.post("/"), {
-      method: "post",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    }).then(res => res.json());
-    // .then(json => {});
-    console.log(name, email, message);
-  };
+  // const sendMail = e => {
+  //   e.preventDefault();
+  //   const data = {
+  //     name,
+  //     email,
+  //     message,
+  //   };
+  //   // fetch("http://localhost:4000/api/sendEmail/sendEmail", {
+  //   fetch("https://blog-back-server.herokuapp.com/api/sendEmail/sendEmail", {
+  //     // fetch(nodemailerApi.post("/"), {
+  //     method: "post",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(data),
+  //   }).then(res => res.json());
+  //   // .then(json => {});
+  //   console.log(name, email, message);
+  // };
 
-  // onChange
-  const handleName = e => {
-    setName(e.target.value);
-  };
-  const handleEmail = e => {
-    setEmail(e.target.value);
-  };
-  const handleMessage = e => {
-    setMessage(e.target.value);
-  };
+  // // onChange
+  // const handleName = e => {
+  //   setName(e.target.value);
+  // };
+  // const handleEmail = e => {
+  //   setEmail(e.target.value);
+  // };
+  // const handleMessage = e => {
+  //   setMessage(e.target.value);
+  // };
 
   return (
     <div className="contact_input">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import axios from "axios"; //axios 연동
 
 // import { portfolioApi, studyApi } from "../shared/Api";
@@ -12,8 +12,14 @@ import OverLay from "../components/common/OverLay";
 import TechnicalSkills from "../components/MainPageComponent/TechnicalSkills";
 import ContactMe from "../components/ContactMe";
 import TableComponent from "../components/StudyTableComponent/Table";
+import Modal from "../shared/Modal";
 
 const MainPageContainer = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [closeBtn, setCloseBtb] = useState(false);
+
   const openNav = () => {
     document.getElementById("mySidenav").style.display = "block";
     document.getElementById("overLay").style.display = "block";
@@ -21,6 +27,40 @@ const MainPageContainer = () => {
   const closeNav = () => {
     document.getElementById("mySidenav").style.display = "none";
     document.getElementById("overLay").style.display = "none";
+  };
+
+  const sendMail = e => {
+    e.preventDefault();
+    const data = {
+      name,
+      email,
+      message,
+    };
+    // fetch("http://localhost:4000/api/sendEmail/sendEmail", {
+    fetch("https://blog-back-server.herokuapp.com/api/sendEmail/sendEmail", {
+      // fetch(nodemailerApi.post("/"), {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    }).then(res => res.json());
+    // .then(json => {});
+    console.log(name, email, message);
+    setCloseBtb(!closeBtn);
+  };
+
+  // onChange
+  const handleName = e => {
+    setName(e.target.value);
+  };
+  const handleEmail = e => {
+    setEmail(e.target.value);
+  };
+  const handleMessage = e => {
+    setMessage(e.target.value);
+  };
+
+  const closeModal = () => {
+    setCloseBtb(!closeBtn);
   };
 
   /* node서버 monggoDB 연동 */
@@ -68,9 +108,21 @@ const MainPageContainer = () => {
         <PortfolioList />
         <TableComponent />
         <TechnicalSkills />
-        <ContactMe />
+        <ContactMe
+          name={name}
+          handleName={handleName}
+          email={email}
+          handleEmail={handleEmail}
+          message={message}
+          handleMessage={handleMessage}
+          sendMail={sendMail}
+        />
         <Footer />
       </MainPageComponent>
+      <Modal
+        style={{ display: closeBtn ? "" : "none" }}
+        closeModal={closeModal}
+      />
     </>
   );
 };
