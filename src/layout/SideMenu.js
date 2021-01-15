@@ -14,9 +14,13 @@ import profile_img from "assets/image/Profile_img.png";
 import SnsList from "./Items/SnsList";
 import MenuList from "./Items/MenuList";
 
-const SideMenu = ({ onClick, style }) => {
+const SideMenu = ({ onClick }) => {
   return (
-    <div className="sideMenu" style={style}>
+    <div
+      className="sideMenu"
+      id="mySidenav"
+      // style={style}
+    >
       <div className="close_ico" onClick={onClick}>
         <img src={close_ico} alt="close_ico" width="100%" height="100%" />
       </div>
