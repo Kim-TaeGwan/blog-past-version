@@ -1,10 +1,10 @@
 import React from "react";
 
 import SideMenu from "layout/SideMenu";
-import Header from "../layout/Header";
-import StudyTableComponent from "../components/StudyTableComponent";
-import OverLay from "../components/common/OverLay";
-import TableComponent from "../components/StudyTableComponent/Table";
+import Header from "layout/Header";
+import StudyTableComponent from "components/StudyTableComponent";
+import OverLay from "components/common/OverLay";
+import TableComponent from "components/StudyTableComponent/Table";
 
 const StudyTableContainer = () => {
   const openNav = () => {

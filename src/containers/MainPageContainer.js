@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 // import axios from "axios"; //axios 연동
 
-// import { portfolioApi, studyApi } from "../shared/Api";
+// import { portfolioApi, studyApi } from "shared/Api";
 
 import MainPageComponent from "components/MainPageComponent";
 import SideMenu from "layout/SideMenu";
 import Footer from "layout/Footer";
-import Header from "../layout/Header";
-import PortfolioList from "../components/MainPageComponent/PortfolioList";
-import OverLay from "../components/common/OverLay";
-import TechnicalSkills from "../components/MainPageComponent/TechnicalSkills";
-import ContactMe from "../components/ContactMe";
-import TableComponent from "../components/StudyTableComponent/Table";
-import Modal from "../shared/Modal";
+import Header from "layout/Header";
+import PortfolioList from "components/MainPageComponent/PortfolioList";
+import OverLay from "components/common/OverLay";
+import TechnicalSkills from "components/MainPageComponent/TechnicalSkills";
+import ContactMe from "components/ContactMe";
+import TableComponent from "components/StudyTableComponent/Table";
+import Modal from "shared/Modal";
 
 const MainPageContainer = () => {
   const [name, setName] = useState("");
