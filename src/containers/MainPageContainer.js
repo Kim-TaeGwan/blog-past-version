@@ -16,15 +16,18 @@ const MainPageContainer = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [closeBtn, setCloseBtb] = useState(false);
-  const [navClose, setNavClose] = useState(false);
+  // const [navClose, setNavClose] = useState(false);
 
   const openNav = () => {
-    setNavClose(!navClose);
+    // setNavClose(!navClose);
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("overLay").style.display = "block";
   };
   const closeNav = () => {
-    setNavClose(!navClose);
+    // setNavClose(!navClose);
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("overLay").style.display = "none";
   };
-
   const sendMail = e => {
     e.preventDefault();
     const data = {
@@ -98,10 +101,12 @@ const MainPageContainer = () => {
     <>
       <SideMenu
         onClick={closeNav}
-        style={{ display: navClose ? "block" : "none" }}
+        // style={{ display: navClose ? "block" : "none" }}
       />
       <MainPageComponent>
-        <OverLay style={{ display: navClose ? "block" : "none" }} />
+        <OverLay
+        //  style={{ display: navClose ? "block" : "none" }}
+        />
         <Header onClick={openNav} />
         <PortfolioList />
         <TableComponent />
