@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const OverLay = () => {
-	return <div className="overlay" id="overLay" />;
+const OverLay = ({ style }) => {
+  return <div className="overlay" style={style} />;
 };
 
 export default OverLay;
