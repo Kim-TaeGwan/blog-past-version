@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-// import axios from "axios"; //axios 연동
-
-// import { portfolioApi, studyApi } from "shared/Api";
 
 import MainPageComponent from "components/MainPageComponent";
 import SideMenu from "layout/SideMenu";
@@ -38,7 +35,6 @@ const MainPageContainer = () => {
     };
     // fetch("http://localhost:4000/api/sendEmail/sendEmail", {
     fetch("https://blog-back-server.herokuapp.com/api/sendEmail/sendEmail", {
-      // fetch(nodemailerApi.post("/"), {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

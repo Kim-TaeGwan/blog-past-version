@@ -14,40 +14,8 @@ const ContactInput = ({
   message,
   handleMessage,
   sendMail,
+  // onChange,
 }) => {
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [message, setMessage] = useState("");
-
-  // const sendMail = e => {
-  //   e.preventDefault();
-  //   const data = {
-  //     name,
-  //     email,
-  //     message,
-  //   };
-  //   // fetch("http://localhost:4000/api/sendEmail/sendEmail", {
-  //   fetch("https://blog-back-server.herokuapp.com/api/sendEmail/sendEmail", {
-  //     // fetch(nodemailerApi.post("/"), {
-  //     method: "post",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify(data),
-  //   }).then(res => res.json());
-  //   // .then(json => {});
-  //   console.log(name, email, message);
-  // };
-
-  // // onChange
-  // const handleName = e => {
-  //   setName(e.target.value);
-  // };
-  // const handleEmail = e => {
-  //   setEmail(e.target.value);
-  // };
-  // const handleMessage = e => {
-  //   setMessage(e.target.value);
-  // };
-
   return (
     <div className="contact_input">
       <form action="/nodemailer" method="post">
@@ -56,18 +24,24 @@ const ContactInput = ({
           inputName="Name"
           value={name}
           onChange={handleName}
+          // onChange={onChange}
+          placeholder="Name을 입력하세요..."
         />
         <ContactInputList
           title="Email"
           inputName="Email"
           value={email}
           onChange={handleEmail}
+          // onChange={onChange}
+          placeholder="Email을 입력하세요..."
         />
         <ContactInputList
           title="Message"
           inputName="Message"
           value={message}
           onChange={handleMessage}
+          // onChange={onChange}
+          placeholder="Message를 입력하세요..."
         />
         <button type="submit" onClick={sendMail}>
           <img
