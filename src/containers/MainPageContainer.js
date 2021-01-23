@@ -116,7 +116,7 @@ const MainPageContainer = () => {
         />
         <Header onClick={openNav} />
         <PortfolioList />
-        <TableComponent />
+        <TableComponent main />
         <TechnicalSkills />
         <ContactMe
           name={name}
