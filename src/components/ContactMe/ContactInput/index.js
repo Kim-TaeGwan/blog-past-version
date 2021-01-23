@@ -6,41 +6,29 @@ import ContactInputList from "./ContactInputList";
 
 import paper_plane_ico from "assets/icon/paper_plane_ico(white).svg";
 
-const ContactInput = ({
-  name,
-  handleName,
-  email,
-  handleEmail,
-  message,
-  handleMessage,
-  sendMail,
-  // onChange,
-}) => {
+const ContactInput = ({ name, email, message, sendMail, onChange }) => {
   return (
     <div className="contact_input">
       <form action="/nodemailer" method="post">
         <ContactInputList
           title="Name"
-          inputName="Name"
+          inputName="name"
           value={name}
-          onChange={handleName}
-          // onChange={onChange}
+          onChange={onChange}
           placeholder="Name을 입력하세요..."
         />
         <ContactInputList
           title="Email"
-          inputName="Email"
+          inputName="email"
           value={email}
-          onChange={handleEmail}
-          // onChange={onChange}
+          onChange={onChange}
           placeholder="Email을 입력하세요..."
         />
         <ContactInputList
           title="Message"
-          inputName="Message"
+          inputName="message"
           value={message}
-          onChange={handleMessage}
-          // onChange={onChange}
+          onChange={onChange}
           placeholder="Message를 입력하세요..."
         />
         <button type="submit" onClick={sendMail}>

@@ -3,15 +3,7 @@ import PartTitle from "components/common/PartTitle";
 import ContactInformation from "./ContactInformation";
 import ContactInput from "./ContactInput";
 
-const ContentMe = ({
-  handleName,
-  email,
-  handleEmail,
-  message,
-  handleMessage,
-  sendMail,
-  name,
-}) => {
+const ContentMe = ({ email, message, sendMail, name, onChange }) => {
   return (
     <div className="contactme">
       <div className="contactme_box">
@@ -20,12 +12,10 @@ const ContentMe = ({
         <hr />
         <ContactInput
           name={name}
-          handleName={handleName}
           email={email}
-          handleEmail={handleEmail}
           message={message}
-          handleMessage={handleMessage}
           sendMail={sendMail}
+          onChange={onChange}
         />
       </div>
     </div>
