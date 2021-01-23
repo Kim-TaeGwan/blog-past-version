@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 
 import MainPageComponent from "components/MainPageComponent";
 import SideMenu from "layout/SideMenu";
@@ -12,9 +12,12 @@ import TableComponent from "components/StudyTableComponent/Table";
 import Modal from "shared/Modal";
 
 const MainPageContainer = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [inputs, setInputs] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
   const [closeBtn, setCloseBtb] = useState(false);
   // const [navClose, setNavClose] = useState(false);
 
@@ -44,18 +47,22 @@ const MainPageContainer = () => {
     // .then(json => {});
     console.log(name, email, message);
     setCloseBtb(!closeBtn);
+    setInputs({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   // onChange
-  const handleName = e => {
-    setName(e.target.value);
-  };
-  const handleEmail = e => {
-    setEmail(e.target.value);
-  };
-  const handleMessage = e => {
-    setMessage(e.target.value);
-  };
+  const { name, email, message } = inputs;
+  const onChange = useCallback(e => {
+    const { name, value } = e.target;
+    setInputs(inputs => ({
+      ...inputs,
+      [name]: value,
+    }));
+  }, []);
 
   const closeModal = () => {
     setCloseBtb(!closeBtn);
@@ -113,12 +120,10 @@ const MainPageContainer = () => {
         <TechnicalSkills />
         <ContactMe
           name={name}
-          handleName={handleName}
           email={email}
-          handleEmail={handleEmail}
           message={message}
-          handleMessage={handleMessage}
           sendMail={sendMail}
+          onChange={onChange}
         />
         <Footer />
       </MainPageComponent>

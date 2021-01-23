@@ -6,7 +6,7 @@ const ContactInputList = props => {
     <div className="contact_input_list">
       <span>{title}</span>
       <input
-        type="text"
+        // type="text"
         name={inputName}
         value={value}
         onChange={onChange}
