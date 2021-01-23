@@ -10,10 +10,15 @@
   border-spacing: 0;
   font-size: 15px;
 }
+.table_container table.main {
+  display: block;
+  height: 200px;
+  overflow: hidden;
+}
 .table_container th {
   height: 25px;
 }
-.table_container table tbody tr:hover .title{
+.table_container table tbody tr:hover .title {
   text-decoration: underline;
 }
 .table_container table tbody tr td:first-child {
@@ -25,7 +30,7 @@
   text-align: right;
   padding-right: 5px;
 }
-.table_container table tbody tr .category{
+.table_container table tbody tr .category {
   font-size: 13px;
   text-align: center;
 }
