@@ -3,6 +3,7 @@ import moment from "moment";
 import PartTitle from "components/common/PartTitle";
 import TableItem from "./TableItem.js";
 import { studyApi } from "shared/Api";
+import { Link } from "react-router-dom";
 
 const TableComponent = ({ main }) => {
   const [list, setList] = useState([]);
@@ -25,6 +26,11 @@ const TableComponent = ({ main }) => {
   return (
     <div className="table_container">
       <PartTitle>StudyTable</PartTitle>
+      {main && (
+        <div className="all_btn">
+          <Link to="/studyTable">전체보기</Link>
+        </div>
+      )}
       {isLoading && <div className="loader" />}
       <table className={main ? "main" : ""}>
         <tbody>

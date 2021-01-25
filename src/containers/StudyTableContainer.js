@@ -5,6 +5,7 @@ import Header from "layout/Header";
 import StudyTableComponent from "components/StudyTableComponent";
 import OverLay from "components/common/OverLay";
 import TableComponent from "components/StudyTableComponent/Table";
+import PageList from "components/common/OverLay";
 
 const StudyTableContainer = () => {
   const openNav = () => {
@@ -23,6 +24,7 @@ const StudyTableContainer = () => {
         <OverLay />
         <Header onClick={openNav} />
         <TableComponent />
+        <PageList />
       </StudyTableComponent>
     </>
   );

@@ -2,8 +2,18 @@
 .table_container {
   padding: 0 16px;
   margin-bottom: 40px;
+  position: relative;
 }
-
+.table_container .all_btn {
+  position: absolute;
+  top: 0;
+  right: 16px;
+}
+.table_container .all_btn a {
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+}
 .table_container table {
   width: 100%;
   margin-top: 25px;
