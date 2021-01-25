@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import moment from "moment";
 import PartTitle from "components/common/PartTitle";
 import TableItem from "./TableItem.js";
 import { studyApi } from "shared/Api";
-import { Link } from "react-router-dom";
+import Pagination from "components/common/Pagination";
 
 const TableComponent = ({ main }) => {
   const [list, setList] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  // const [postsPerPage, setPostsPerPage] = useState(10);
 
   useEffect(() => {
     async function fetchStudyList() {
@@ -23,6 +26,16 @@ const TableComponent = ({ main }) => {
     fetchStudyList();
   }, []);
 
+  // pagination
+  let postsPerPage = 10;
+  const indexOfLast = currentPage * postsPerPage;
+  const indexOfFist = indexOfLast - postsPerPage;
+  function currentPosts(tmp) {
+    let currentPosts = 0;
+    currentPosts = tmp.slice(indexOfFist, indexOfLast);
+    return currentPosts;
+  }
+
   return (
     <div className="table_container">
       <PartTitle>StudyTable</PartTitle>
@@ -35,7 +48,7 @@ const TableComponent = ({ main }) => {
       <table className={main ? "main" : ""}>
         <tbody>
           {list &&
-            list.map((item, i) => (
+            currentPosts(list).map((item, i) => (
               <TableItem
                 key={i}
                 title={item.title}
@@ -46,6 +59,15 @@ const TableComponent = ({ main }) => {
             ))}
         </tbody>
       </table>
+      {main ? (
+        ""
+      ) : (
+        <Pagination
+          postsPerpage={postsPerPage}
+          totalPosts={list.length}
+          paginate={setCurrentPage}
+        />
+      )}
     </div>
   );
 };
