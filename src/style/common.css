@@ -67,21 +67,29 @@
   padding: 8px 16px;
   display: inline-block;
   vertical-align: middle;
+  cursor: pointer;
 }
 .page_list .arrow {
   font-size: 15px;
 }
-.page_list .insert {
+.page_list .page {
+  color: #000;
+  background-color: #ccc;
+}
+/* .page_list .insert {
   color: #fff;
   background-color: #000;
-}
+} */
 .page_list .page:hover {
   color: #fff;
   background-color: #000;
 }
 .page_list .insert:hover {
-  color: #000;
-  background-color: #ccc;
+  /* color: #000;
+  background-color: #ccc; */
+
+  color: #fff;
+  background-color: #000;
 }
 
 /* parttitle */
