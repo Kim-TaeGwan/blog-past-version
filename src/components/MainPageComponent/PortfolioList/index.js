@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Portfolio from "components/common/Portfolio";
-import PageList from "components/common/PageList";
+import Pagination from "components/common/Pagination";
 
 import { portfolioApi } from "shared/Api";
 
@@ -45,7 +45,7 @@ const PortfolioList = () => {
             </a>
           ))}
       </div>
-      <PageList />
+      <Pagination />
     </>
   );
 };
