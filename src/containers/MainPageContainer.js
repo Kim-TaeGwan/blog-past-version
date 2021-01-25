@@ -17,7 +17,6 @@ const MainPageContainer = () => {
     email: "",
     message: "",
   });
-
   const [closeBtn, setCloseBtb] = useState(false);
   // const [navClose, setNavClose] = useState(false);
 
@@ -31,6 +30,8 @@ const MainPageContainer = () => {
     document.getElementById("mySidenav").style.display = "none";
     document.getElementById("overLay").style.display = "none";
   };
+
+  // contactme 이메일 전송
   const sendMail = e => {
     e.preventDefault();
     const data = {
@@ -54,7 +55,7 @@ const MainPageContainer = () => {
     });
   };
 
-  // onChange
+  // contactme onChange
   const { name, email, message } = inputs;
   const onChange = useCallback(e => {
     const { name, value } = e.target;
