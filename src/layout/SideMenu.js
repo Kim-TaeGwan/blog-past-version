@@ -14,7 +14,7 @@ import profile_img from "assets/image/Profile_img.png";
 import SnsList from "./Items/SnsList";
 import MenuList from "./Items/MenuList";
 
-const SideMenu = ({ onClick }) => {
+const SideMenu = ({ onClick, main }) => {
   return (
     <div
       className="sideMenu"
@@ -32,8 +32,8 @@ const SideMenu = ({ onClick }) => {
       <div className="menu_list">
         <ul>
           <MenuList link="/" img={box_ico_black} menu="PORTFOLIO" />
-          <MenuList link="/" img={user_ico_black} menu="ABOUT" />
-          <MenuList link="/" img={mail_ico_black} menu="CONTACT" />
+          <MenuList link="/asd" img={user_ico_black} menu="ABOUT" />
+          <MenuList link="/asd" img={mail_ico_black} menu="CONTACT" />
           <MenuList
             link="/studyTable"
             img={table_ico_black}
