@@ -6,10 +6,10 @@ import StudyTable from "./pages/studytable";
 const Routes = () => {
   return (
     <BrowserRouter basename="/">
-      {/* github pages에서 spa지원을위해 <HashRouter basename="/"> 사용 */}
+      {/* github pages에서 spa지원을위해 <BrowserRouter basename="/"> 사용 */}
       <Switch>
         <Route exact path="/" component={Main} />
-        <Route path="/studyTable" component={StudyTable} />
+        <Route exact path="/studyTable" component={StudyTable} />
       </Switch>
     </BrowserRouter>
   );
