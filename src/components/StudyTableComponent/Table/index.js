@@ -59,7 +59,9 @@ const TableComponent = ({ main }) => {
             ))}
         </tbody>
       </table>
-      {main && (
+      {main ? (
+        ""
+      ) : (
         <Pagination
           postsPerpage={postsPerPage}
           totalPosts={list.length}
