@@ -15,6 +15,9 @@ import SnsList from "./Items/SnsList";
 import MenuList from "./Items/MenuList";
 
 const SideMenu = ({ onClick, main }) => {
+  const nullPage = () => {
+    alert("페이지 공사중입니다");
+  };
   return (
     <div
       className="sideMenu"
@@ -32,8 +35,30 @@ const SideMenu = ({ onClick, main }) => {
       <div className="menu_list">
         <ul>
           <MenuList link="/" img={box_ico_black} menu="PORTFOLIO" />
-          <MenuList link="/asd" img={user_ico_black} menu="ABOUT" />
-          <MenuList link="/asd" img={mail_ico_black} menu="CONTACT" />
+          {/* <MenuList link="/asd" img={user_ico_black} menu="ABOUT" /> */}
+          <li onClick={nullPage}>
+            <span className="ico">
+              <img
+                src={user_ico_black}
+                alt="side_menu_ico"
+                width="100%"
+                height="100%"
+              />
+            </span>
+            <span> ABOUT </span>
+          </li>
+          {/* <MenuList link="/asd" img={mail_ico_black} menu="CONTACT" /> */}
+          <li onClick={nullPage}>
+            <span className="ico">
+              <img
+                src={mail_ico_black}
+                alt="side_menu_ico"
+                width="100%"
+                height="100%"
+              />
+            </span>
+            <span> CONTACT </span>
+          </li>
           <MenuList
             link="/studyTable"
             img={table_ico_black}
