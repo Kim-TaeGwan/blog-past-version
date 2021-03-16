@@ -1,6 +1,6 @@
-import React from "react";
+import React, { memo } from "react";
 
-const Portfolio = ({ title, comment, img_url }) => {
+const Portfolio = memo(({ title, comment, img_url }) => {
   return (
     <div className="portfolio">
       <div className="portfolio_img">
@@ -14,6 +14,6 @@ const Portfolio = ({ title, comment, img_url }) => {
       </div>
     </div>
   );
-};
+});
 
 export default Portfolio;
