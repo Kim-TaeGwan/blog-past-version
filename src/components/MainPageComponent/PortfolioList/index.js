@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import Portfolio from "components/common/Portfolio";
 import Pagination from "components/common/Pagination";
 
 import { portfolioApi } from "shared/Api";
 
-const PortfolioList = () => {
+const PortfolioList = memo(() => {
   const [list, setList] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -63,6 +63,6 @@ const PortfolioList = () => {
       />
     </>
   );
-};
+});
 
 export default PortfolioList;

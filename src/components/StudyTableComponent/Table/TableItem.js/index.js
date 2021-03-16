@@ -1,11 +1,10 @@
-import React from "react";
+import React, { memo } from "react";
 
-const TableItem = ({ title, date, number, url,category }) => {
+const TableItem = memo(({ title, date, number, url, category }) => {
   const notionUrl = () => {
     let openNewWindow = window.open("about:blank");
     openNewWindow.location.href = `${url}`;
-
-  }
+  };
   return (
     <tr onClick={notionUrl} className={`as`}>
       <td className="category">{category}</td>
@@ -13,6 +12,6 @@ const TableItem = ({ title, date, number, url,category }) => {
       <td>{date}</td>
     </tr>
   );
-};
+});
 
 export default TableItem;
