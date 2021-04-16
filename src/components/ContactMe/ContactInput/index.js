@@ -38,7 +38,7 @@ const ContactInput = ({ name, email, message, sendMail, onChange }) => {
             width="15px"
             height="15px"
           />
-          <span>Sand Message</span>
+          <span>Send Message</span>
         </button>
       </form>
     </div>
