@@ -12,13 +12,11 @@ const StudyTableContainer = () => {
   };
 
   return (
-    <>
-      <StudyTableComponent>
-        <OverLay />
-        <Header onClick={openNav} />
-        <TableComponent />
-      </StudyTableComponent>
-    </>
+    <StudyTableComponent>
+      <OverLay />
+      <Header onClick={openNav} />
+      <TableComponent />
+    </StudyTableComponent>
   );
 };
 
