@@ -30,7 +30,8 @@ const TableComponent: FC<Props> = ({ main }) => {
   }, []);
 
   // pagination
-  let postsPerPage = 10;
+
+  let postsPerPage: any = 10;
   const indexOfLast = currentPage * postsPerPage;
   const indexOfFist = indexOfLast - postsPerPage;
   function currentPosts(tmp: any) {
@@ -51,11 +52,11 @@ const TableComponent: FC<Props> = ({ main }) => {
       <table className={main ? 'main' : ''}>
         <tbody>
           {/*{list &&*/}
-          {/*  currentPosts(list).map((item, i) => (*/}
+          {/*  currentPosts(list).map((item, i): any => (*/}
           {/*    <TableItem*/}
           {/*      key={i}*/}
           {/*      title={item.title}*/}
-          {/*      date={moment(item.dete).format('YY.MM.DD HH:mm')}*/}
+          {/*      date={moment(item.date).format('YY.MM.DD HH:mm')}*/}
           {/*      category={item.category}*/}
           {/*      url={item.url}*/}
           {/*    />*/}
@@ -65,7 +66,7 @@ const TableComponent: FC<Props> = ({ main }) => {
               <TableItem
                 key={i}
                 title={item.title}
-                date={moment(item.dete).format('YY.MM.DD HH:mm')}
+                date={moment(item.date).format('YY.MM.DD HH:mm')}
                 category={item.category}
                 url={item.url}
               />
