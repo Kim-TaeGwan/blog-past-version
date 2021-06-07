@@ -108,15 +108,20 @@
   vertical-align: middle;
 }
 
-.sideMenu .sns_list span {
+.sideMenu .sns_list div {
   width: 18px;
   height: 18px;
   margin-right: 10px;
   display: inline-block;
   cursor: pointer;
 }
+.sideMenu .sns_list div a{
+  width: 18px;
+  height: 18px;
+  display: block;
+}
 
-.sideMenu .sns_list span:last-child {
+.sideMenu .sns_list div:last-child {
   margin-right: 0px;
 }
 

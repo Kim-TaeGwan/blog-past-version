@@ -1,0 +1,25 @@
+{
+  "include": ["src", "custom.d.ts"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "lib": ["ES2020", "DOM"],
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "target": "es5",
+    "strict": true,
+    "resolveJsonModule": true,
+    "baseUrl": "src",
+    "paths": {
+//      "@assets/*" : ["assets/*"],
+//      "@components/*": ["components/*"],
+//      "@containers/*": ["containers/*"],
+//      "@layouts/*": ["layouts/*"],
+//      "@pages/*": ["pages/*"],
+//      "@shared/*": ["shared/*"],
+//      "@style/*": ["style/*"]
+      "@/*": ["src/*"]
+    }
+  }
+}
