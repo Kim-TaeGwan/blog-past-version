@@ -32,7 +32,8 @@ const PortfolioList: FC = memo(() => {
   console.log(typeof list);
   console.log(list);
 
-  // console.log(list);
+  // const listArray = Object.entries(list);
+  // console.log('listArray : ', listArray);
 
   // pagination
   let postsPerPage = 10;
@@ -48,8 +49,8 @@ const PortfolioList: FC = memo(() => {
     <>
       <div className="portfolio_list">
         {isLoading && <div className="loader" />}
-        {/*{list &&*/}
-        {/*  currentPosts(list)?.map((item: any, index: number) => (*/}
+        {/*{listArray &&*/}
+        {/*  currentPosts(listArray)?.map((item: any, index: any) => (*/}
         {/*    <a key={index} href={item.url} target="black">*/}
         {/*      <Portfolio title={item.title} comment={item.comment} img_url={item.img_url} />*/}
         {/*    </a>*/}
