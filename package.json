@@ -20,6 +20,7 @@
     "babel-preset-react-app": "^9.1.2",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
+    "cra-bundle-analyzer": "^0.1.0",
     "cross-env": "^6.0.3",
     "css-loader": "2.1.1",
     "dotenv": "6.2.0",
@@ -147,6 +148,7 @@
   "homepage": "https://kim-taegwan.github.io/",
   "devDependencies": {
     "gh-pages": "^2.2.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "webpack-bundle-analyzer": "^4.4.2"
   }
 }
