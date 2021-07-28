@@ -12,7 +12,6 @@ interface Props {
 const TableComponent: FC<Props> = ({ main }) => {
   const [list, setList] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
   // const [postsPerPage, setPostsPerPage] = useState(10);
 
   useEffect(() => {
@@ -31,15 +30,6 @@ const TableComponent: FC<Props> = ({ main }) => {
 
   // pagination
 
-  let postsPerPage: any = 10;
-  const indexOfLast = currentPage * postsPerPage;
-  const indexOfFist = indexOfLast - postsPerPage;
-  function currentPosts(tmp: any) {
-    let currentPosts = 0;
-    currentPosts = tmp.slice(indexOfFist, indexOfLast);
-    return currentPosts;
-  }
-
   return (
     <div className="table_container">
       <h4 className="part_title">StudyTable</h4>
@@ -51,16 +41,6 @@ const TableComponent: FC<Props> = ({ main }) => {
       {isLoading && <div className="loader" />}
       <table className={main ? 'main' : ''}>
         <tbody>
-          {/*{list &&*/}
-          {/*  currentPosts(list).map((item, i): any => (*/}
-          {/*    <TableItem*/}
-          {/*      key={i}*/}
-          {/*      title={item.title}*/}
-          {/*      date={moment(item.date).format('YY.MM.DD HH:mm')}*/}
-          {/*      category={item.category}*/}
-          {/*      url={item.url}*/}
-          {/*    />*/}
-          {/*  ))}*/}
           {list &&
             list.map((item: any, i) => (
               <TableItem
@@ -73,7 +53,7 @@ const TableComponent: FC<Props> = ({ main }) => {
             ))}
         </tbody>
       </table>
-      {main ? '' : <Pagination postsPerpage={postsPerPage} totalPosts={list.length} paginate={setCurrentPage} />}
+      {main ? '' : <Pagination />}
     </div>
   );
 };
